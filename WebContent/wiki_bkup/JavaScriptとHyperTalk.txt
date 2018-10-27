@@ -1,0 +1,19 @@
+== HyperCardのコード行数 ==
+HyperCardはソースコードが公開されていませんが、ビル・アトキンソンの作ったMacPaintはソースコードが公開されており、5804行のPascalと2738行のアセンブリ言語で書かれています。
+
+"HyperCard is about 15 times as big as MacPaint."[http://www.savetz.com/ku/ku/quick_genius_behind_hypercard_bill_atkinson_the_november_1987.html ビル・アトキンソンのインタビュー記事]なので15倍にすると(5804+2738)*15 = 128130。じゅうにまんはっせんぎょう……すげえ。
+
+== こんなところにBillが ==
+ask passwordで空白を入れたときに返ってくる数字が0x42696C6C。1byteずつに分解して、0x42 0x69 0x6C 0x6C。文字にするとB i l lになる。
+
+== HyperCardを葬ったのはジョブズ? ==
+ジョブズがAppleに復帰したとき、既にHyperCard2.xは時代遅れもいいところでした。そりゃ葬られても仕方が無い。しかしQuickTimeと統合したHyperCard3.0が計画中でした。
+
+QuickTimeでカラーも動画も音声もバリバリ使えて、WebブラウザからもQuickTimeプラグインでHyperCardスタックが見れる、おお素晴らしい。でも当時Flashがありましたし、元々ネットワークを考慮していないHyperCardでは太刀打ちできそうになかったです。
+
+ジョブズが葬ったというよりは、HyperCardは既に死んでいたということです。
+
+== Atkinson DitheringはHyperCardに使われていない? ==
+ディザリングは、色数の多い画像を少ない色数で表すために使われる方法です。誤差拡散法などが有名です。ビル・アトキンソンが誤差拡散法の計算を当時のCPUで高速に処理できるように考案したのがAtkinson Ditheringです。（かけ算や割り算を使わず、シフト演算でできるので高速）
+
+ビル・アトキンソンが考えたのだから、HyperCardが採用しているはずと考えてしまいます。しかし、Atkinson DitheringはHyperScanという、スキャナ用のソフトで使われていたものです。手元の環境で確認したところ、HyperCardではOSの機能(QuickDraw)を使ってディザリングされているようです。（QuikcDrawも元はビル・アトキンソンが作ったのですが）

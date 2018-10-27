@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>put</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>put 文字列 into コンテナ</h3>
+<p>文字列をコンテナに入れます。
+</p>
+<pre class=source>
+on mouseUp
+  put cd fld 1 into mem
+  put 123 into cd fld 1
+end mouseUp
+</pre>
+
+<h3>put 文字列 before コンテナ</h3>
+<p>文字列をコンテナの前に追加します。
+</p>
+<pre class=source>
+on mouseUp
+  put 12 into x
+  put 3 before x -- 312になる
+end mouseUp
+</pre>
+
+<h3>put 文字列 after コンテナ</h3>
+<p>文字列をコンテナの後に追加します。
+</p>
+<pre class=source>
+on mouseUp
+  put 12 into x
+  put 3 after x -- 123になる
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

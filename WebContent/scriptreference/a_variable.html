@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>変数とコンテナ</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>変数の宣言</h3>
+				<p>通常の変数の宣言は不要です。グローバル変数は宣言が必要です。
+				</p>
+				<h3>変数のスコープ</h3>
+				<p>変数はハンドラ内で値を保ち、他のハンドラで使う変数とは無関係になります。※グローバル変数をのぞく
+				</p>
+				<h3>グローバル変数</h3>
+				<p>「global aaa」のように宣言すればaaaをグローバル変数として使用できます。使用するハンドラすべてで、使う場所より前に宣言する必要があります。グローバル変数にすればスタックを閉じるまでの間、変数の値は保持されます。
+				</p>
+				<p>初期状態で値が入っているグローバル変数として、UserNameがあります。
+				</p>
+				
+				<h3>コンテナ</h3>
+				<p>変数やフィールドのように値を保持したり変更できる入れ物を「コンテナ」と呼びます。オブジェクトのうちボタンとフィールドがコンテナです。
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

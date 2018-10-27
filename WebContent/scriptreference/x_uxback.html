@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>UxBack</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>UxBack</h3>
+<p>本来はデスクトップを隠す背景画像を表示する拡張機能です。HCjsではブラウザウィンドウ内のグレーの背景部分に画像を表示します。
+</p>
+<pre class=source>
+on mouseUp
+  UxBack &quot;Black&quot; --色を英語で指定
+  UxBack (0-65535) --明るさを数値で指定するグレー表示
+  UxBack &quot;ICON&quot;, &quot;iconリソースID&quot;, (拡大倍率)
+  UxBack &quot;ppat&quot;, &quot;ppatリソース名&quot;
+  UxBack &quot;Close&quot;
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

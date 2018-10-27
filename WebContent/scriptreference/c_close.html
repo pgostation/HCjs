@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>close</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>close file ファイル名</h3>
+<p>open fileコマンドで開いたファイルを閉じます。
+</p>
+<pre class=source>
+on mouseUp
+  open file &quot;abc.txt&quot;
+  read from file &quot;abc.txt&quot; until EOF
+  answer it
+  close file &quot;abc.txt&quot;
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

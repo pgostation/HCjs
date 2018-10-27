@@ -1,0 +1,373 @@
+body {background-color: #7f7f7f;-webkit-tap-highlight-color: rgba(255,255,255,0.0);-webkit-touch-callout:none;padding:0; margin:0;}
+
+#page{background-color: #7f7f7f;position:absolute;width:100%;padding:0px;}
+
+/*p.copyright {position: absolute; z-index:-100; top:100%; 
+  text-align: center; width:100%; margin-top:  -20px;}*/
+
+section.cardBack {
+   position: absolute;
+   background-color: #ffffff;
+   top: 50%;
+   left: 50%;
+   width:512px;
+   height:384px;
+   overflow: hidden;
+   border-radius: 4px;
+   box-shadow:  4px 4px 20px #000;
+   -webkit-box-shadow:  4px 4px 20px #000;
+   /*z-index:100;*/
+  cursor: pointer;
+}
+
+div.cardBack {
+   position:absolute;
+   overflow: hidden;
+   border-radius: 4px;
+   background-color: #ffffff;
+  -moz-transition: all 0s linear;
+  -webkit-transition: all 0s linear;
+  /*-moz-user-select:none;
+  -webkit-user-select:none;これがあるとフィールドのテキスト編集できない*/
+  cursor: pointer;
+}
+div.cardBackHover {
+   background-color: #0044ff;
+}
+
+div.messageBox{ 
+  box-shadow: 2px 4px 10px #000;
+  -webkit-box-shadow: 2px 4px 10px #000;
+  background-color:#fff;
+  border-radius: 4px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  background:#eee;
+}
+div.dragPalette{ background-color:#ccc;
+background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
+background: -moz-linear-gradient(top, #ddd, #aaa); 
+box-shadow:0px 0px 4px #000;
+}
+div.smallTitleBar{
+width:100%;
+height: 16px;
+background-color:#ccc;
+background: -webkit-gradient(linear, left top, left bottom, from(#ddd), to(#aaa));
+background: -moz-linear-gradient(top, #ddd, #aaa); 
+border-top-left-radius: 4px; border-top-right-radius: 4px;
+text-align:center;
+cursor:default;
+font-size:90%;
+line-height:16px;
+text-shadow:0px 1px 0px #ddd;
+}
+a.closeBox{
+top:4px;
+left:4px;
+position:absolute;
+width:8px;
+height:8px;
+background-color:#e55;
+background: -webkit-gradient(linear, left top, left bottom, from(#f77), to(#b33));
+background: -moz-linear-gradient(top, #f77, #b33); 
+border-radius: 4px;
+cursor:pointer;
+box-shadow:0px 0px 2px #000;
+}
+a:hover.closeBox{
+box-shadow:0px 0px 2px #fff;
+}
+
+div.shadowFld{position: absolute; box-shadow: 3px 3px 4px #000; -webkit-box-shadow: 7px 7px 4px #000;}
+div.shadow{position: absolute; box-shadow: 2px 2px 1px #000; -webkit-box-shadow: 2px 2px 1px #000;}
+div.shadowBtn{position: absolute; box-shadow: 0px 0px 2px #9cf; -webkit-box-shadow: 0px 0px 2px #9cf; background-color:#9cf;}
+
+div.transparent{cursor: pointer;position: absolute; border:0px; background-color:transparent; resize: none;overflow: hidden; -webkit-appearance: none;
+word-wrap:break-word; /*HyperCardではbreak-word状態になるので、合わせる*/}
+div.opaque{cursor: pointer;position: absolute; border:0px; background-color:white; opacity:0.95; resize: none;overflow: hidden; -webkit-appearance: none;
+word-wrap:break-word; }
+div.rectangle{cursor: pointer;position: absolute; border-width:1px 1px 1px 1px; border-style:solid; border-color:#888 #aaa #aaa #888; background-color:white; opacity:0.95; resize: none;overflow: hidden;
+word-wrap:break-word; -webkit-box-shadow: inset 2px 2px 3px #ccc;}
+div.shadow{cursor: pointer;position: absolute; border-width:1px 1px 1px 1px; border-style:solid; border-color:#444 #000 #000 #444; background-color:white; opacity:0.95; resize: none;overflow: hidden;
+word-wrap:break-word; }
+div.scrolling{cursor: pointer;position: absolute;border-width:1px 1px 1px 1px; border-style:solid; border-color:#888 #aaa #aaa #888; background-color:white; opacity:0.95; resize: none;overflow-y: scroll; overflow-x: hidden;
+word-wrap:break-word; -webkit-box-shadow: inset 2px 2px 3px #ccc;}
+
+div.scrolling::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+div.scrolling::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    background: #eee;
+}
+ 
+div.scrolling::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.5);
+    background: #888;
+}
+  
+
+.ui-widget-content::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.ui-widget-content::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+ 
+.ui-widget-content::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+    background: #888;
+}
+
+button{
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  overflow:hidden;
+  text-align:center;
+  white-space: nowrap;
+}
+button.transparent{position: absolute; background-color:transparent; border:0px;}
+button.opaque{position: absolute; background-color:#fff; border:0px solid; border-radius: 0px;}
+button.rectangle{position: absolute; background-color:#fff; border:1px solid; border-radius: 0px;}
+button.roundrect{position: absolute; background-color:#fff; border-width:1px; border-radius: 6px;
+	background: -moz-linear-gradient(top, #fff, #eee 48%, #ccc 52%, #ccc); background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.48, #eee), color-stop(0.52, #ccc), to(#ccc)); text-shadow: 0px 1px 0px #fff;}
+button.roundrectH{position: absolute; background-color:#ccc; border-width:1px; border-radius: 6px;
+	background: -moz-linear-gradient(top, #999, #888 48%, #666 52%, #666); background: -webkit-gradient(linear, left top, left bottom, from(#999), color-stop(0.48, #888), color-stop(0.52, #666), to(#666)); text-shadow: 0px 1px 0px #fff;}
+button.shadow{position: absolute; background-color:#fff; border-left-width:1px; border-top-width:1px; border-right-width:2px; border-bottom-width:2px; border-radius: 0px;
+	background: -moz-linear-gradient(top, #fff, #eee 48%, #ccc 52%, #ccc); background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(0.48, #eee), color-stop(0.52, #ccc), to(#ccc)); text-shadow: 0px 1px 0px #fff;}
+button.shadowH{position: absolute; background-color:#ccc; border-width:1px; border-radius: 0px;
+	background: -moz-linear-gradient(top, #999, #888 48%, #666 52%, #666); background: -webkit-gradient(linear, left top, left bottom, from(#999), color-stop(0.48, #888), color-stop(0.52, #666), to(#666)); text-shadow: 0px 1px 0px #fff;}
+button.standard{position: absolute;-webkit-tap-highlight-color: rgba(128,128,128,0.5);}
+button.default{position: absolute; }
+button.oval{position: absolute; background-color:#fff; border:0px solid; border-radius: 999px;}
+
+input{cursor: pointer;}
+label{
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+input.checkbox{}
+input.radio{}
+div.checkbox, div.radio, div.popup{cursor: pointer; position: absolute; overflow: hidden;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  white-space:nowrap;
+  font-family:'Lucida Grande';
+  background-color:rgba(255,255,255,0.8);
+}
+div.popup label {position:absolute;font-family:'Lucida Grande';}
+div.popup select {position:absolute;}
+input.search{position: absolute;-webkit-tap-highlight-color: rgba(128,128,128,0.5);cursor:auto;}
+input.range{position: absolute;-webkit-tap-highlight-color: rgba(128,128,128,0.5);}
+
+input.dialog{
+	background:#fff;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(0.2,#eee),to(#ddd));
+	background-image:-moz-linear-gradient(top, #fff, #eee 20%, #ddd);
+	border:1px solid #bbb;
+	border-radius:24px;
+	padding:6px 16px 8px 16px;
+}
+input.dialogH{
+	background:#68b;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#ddf),color-stop(0.2,#9bd),to(#57a));
+	background-image:-moz-linear-gradient(top, #ddf, #9bd 20%, #57a);
+	border:1px solid #79c;
+	border-radius:24px;
+	padding:6px 16px 8px 16px;
+}
+input.dialogDefault{
+	background:#89e;
+	background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(0.2,#bdf),to(#79c));
+	background-image:-moz-linear-gradient(top, #fff, #bdf 20%, #79c);
+	border:1px solid #9bf;
+	border-radius:24px;
+	padding:6px 16px 8px 16px;
+}
+
+select{cursor: pointer;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+option{cursor: pointer;}
+select.popup{}
+select.selectFld{position: absolute;}
+
+div.info {
+	width:440px;
+	position:absolute;
+	background-color:#fff;
+	z-index:2001;
+	border-radius:8px;
+	box-shadow:1px 1px 10px #000;
+	top:0px;
+}
+#answerMsg, #askMsg {
+    font-size: 110%;
+}
+@media screen and (max-width: 440px) {
+div.info {
+	width:320px;
+}
+#answerMsg, #askMsg {
+    font-size: 100%;
+}
+}
+	
+div.info dl {
+    margin: 0;
+    padding: 0;
+}
+
+div.info dt {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 100%;
+    line-height: 1.6em;
+    white-space:nowrap;
+	text-align:right;
+	width:6em;
+}
+
+div.info dd {
+    margin: -2.0em 0 0 6em;
+    padding: 0.2em;
+    line-height: 1.6em;
+    white-space:nowrap;
+}
+
+div.info input, div.info select {
+    font-size:14px;
+    margin:4px;
+	vertical-align:middle;
+}
+
+div.info label {
+    white-space:nowrap;
+}
+/*
+div#scriptArea span {
+	padding: 0px 5px 0px 5px;
+	margin: 2px;
+	line-height:1.5em;
+}
+
+div#scriptAreaDiv {
+	width:100%;
+	height:100%;
+	overflow:scroll;
+}
+
+div#scriptArea span.scrHand {background-color:#8ee; border-radius: 12px 12px 0px 0px;}
+div#scriptArea span.scrEndHand {background-color:#8ee; border-radius: 0px 0px 12px 12px; padding-right:3em;}
+div#scriptArea span.scrIf {background-color:#8ee; border-radius: 12px 12px 0px 0px;}
+div#scriptArea span.scrEndIf {background-color:#8ee; border-radius: 0px 0px 12px 12px; padding-right:3em;}
+div#scriptArea span.indent {background-color:#fff;}
+div#scriptArea span.scrCmd {background-color:#faf; border-radius: 12px 0px 0px 12px;}
+div#scriptArea span.scrCmdEnd {background-color:#faf; border-radius: 0px 12px 12px 0px;}
+div#scriptArea span.scrObj {background-color:#ed6; border-radius: 12px;}
+div#scriptArea span.scrComment {color:#050;}*/
+
+div.Footer{
+position:absolute;width:100%;top:100%;margin-top:-48px;height:48px;text-align:center;
+white-space:nowrap;overflow:hidden;
+background:#000000;
+background: -moz-linear-gradient(top, #555, #000);
+background:-webkit-gradient(linear, left top, left bottom, from(#555), to(#000));"
+
+}
+
+div.FooterB{
+position:absolute;width:100%;top:100%;margin-top:-48px;height:48px;text-align:center;
+white-space:nowrap;overflow:hidden;
+background:#446644;
+background: -moz-linear-gradient(left top, #000, #000 25%, #464 25%, #464 50%,
+	#000 50%, #000 75%, #464 75%,#464);  
+background: -webkit-gradient(linear, left top, right bottom,
+	from(#000), color-stop(25%, #000), color-stop(25%, #464), color-stop(50%, #464), 
+	color-stop(50%, #000), color-stop(77%, #000), color-stop(77%, #464), to(#464));  
+-webkit-background-size: 16px 16px;
+background-size: 16px 16px;
+}
+
+div.H.Footer{
+position:absolute;width:100%;top:100%;margin-top:-48px;height:48px;text-align:center;
+white-space:nowrap;overflow:hidden;
+background:#006688;
+background: -moz-linear-gradient(top, #46a, #057);
+background:-webkit-gradient(linear, left top, left bottom, from(#46a), to(#057));"
+}
+
+div.H.FooterB{
+position:absolute;width:100%;top:100%;margin-top:-48px;height:48px;text-align:center;
+white-space:nowrap;overflow:hidden;
+background:#478;
+background: -moz-linear-gradient(left top, #068, #068 25%, #478 25%, #478 50%,
+	#068 50%, #068 75%, #478 75%,#478);  
+background: -webkit-gradient(linear, left top, right bottom,
+	from(#068), color-stop(25%, #068), color-stop(25%, #478), color-stop(50%, #478), 
+	color-stop(50%, #068), color-stop(77%, #068), color-stop(77%, #478), to(#478));  
+-webkit-background-size: 16px 16px;
+background-size: 16px 16px;
+}
+
+#ipadnav {display:inline;}
+@media screen and (max-width: 640px) {
+#ipadnav {display:none;}
+}
+
+div.infoDiv {}
+@media screen and (max-width: 480px) {
+div.infoDiv {font-size:80%;padding-left:10px !important;padding-right:1px !important;}
+}
+
+h3.infoH {font-size:120%;padding:5px 5px 5px 30px;}
+@media screen and (max-width: 480px) {
+h3.infoH {font-size:100%;padding:5px 5px 5px 30px;}
+}
+
+div.infoLoc1 {float:left;width:200px;}
+@media screen and (max-width: 480px) {
+div.infoLoc1 {float:left;width:160px;}
+}
+
+div.infoBack {position:absolute; width:440px; height:auto; background:transparent;opacity:0.95; z-index:2001; overflow:hidden;}
+@media screen and (max-width: 440px) {
+div.infoBack {width:100%;}
+}
+
+div.scriptEditorBack {position:absolute; left:50%; margin-left:-400px; width:800px; height:100%; background:transparent; z-index:2001; overflow:hidden;}
+@media screen and (max-width: 800px) {
+div.scriptEditorBack {width:100%;left:0px;margin-left:0px;}
+}
+
+@media screen and (max-height: 320px) {
+div#dummy_menu li a{font-size:90%;padding-top:0.1em;padding-bottom:0.1em;}
+}
+
+input[type=number]::-webkit-outer-spin-button{
+-webkit-appearance:none;
+}
+
+
+/* 画像背景 */
+.backgroundTile {
+  background-color: #fff;
+	background: -moz-linear-gradient(left top, #FFF, #FFF 25%, #EEE 25%, #EEE 50%,
+		#FFF 50%, #FFF 75%, #EEE 75%,#EEE);  
+    background: -webkit-gradient(linear, left top, right bottom,
+		from(#FFF), color-stop(25%, #FFF), color-stop(25%, #EEE), color-stop(50%, #EEE), 
+		color-stop(50%, #FFF), color-stop(77%, #FFF), color-stop(77%, #EEE), to(#EEE));  
+    /*-moz-background-size: 16px 16px;*/
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+}

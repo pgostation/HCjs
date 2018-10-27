@@ -1,0 +1,10 @@
+<div class="left">2012/04/08</div>
+<div class="right">
+iPad対応中
+</div>
+
+<br><h3></h3>
+<div class="left">2012/04/09</div>
+<div class="right">
+iPad対応中
+</div>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>コマンドと関数</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>HCjs内蔵のコマンドと関数</h3>
+				<p>HCjsでは内蔵のコマンドと関数が用意されています。一覧と説明はスクリプトリファレンスを参照してください。
+				</p>
+				<h3>内蔵コマンドanswerの使用例</h3>
+				<p>on mouseUp<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;answer &quot;hello&quot;<br>
+				end mouseUp
+				</p>
+				<h3>内蔵関数の使用例</h3>
+				<p>on mouseUp<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;put abs(-2)<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;put abs of -2<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;-- どちらの書き方でも同じように内蔵のabs関数が呼び出されます。(HyperCardと異なる)<br>
+				end mouseUp
+				</p>
+				<p>on mouseUp<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;put clickChunk()<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;put the clickChunk<br>
+				end mouseUp
+				</p>
+				<h3>スクリプトで作成するユーザ定義のコマンドと関数</h3>
+				<p>スクリプトでユーザで定義するコマンドと関数の二種類のハンドラが作成できます。コマンドはメッセージを受け取るため、関数はスクリプトから呼ばれて値を返すために使います。
+				</p>
+				<h3>ユーザ定義コマンドの例</h3>
+				<p>on mouseUp<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;set icon of me to 1001<br>
+				end mouseUp
+				</p>
+				<h3>ユーザ定義関数の例</h3>
+				<p>function goukei a,b<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;return a+b<br>
+				end goukei
+				</p>
+				<h3>内蔵コマンド/関数のユーザ定義コマンド/関数による上書きはできません</h3>
+				<p>内部で定義されているコマンド/関数は内蔵コマンド/関数が実行されます。ユーザで同じ名前のコマンド/関数を定義しても使えません。
+				</p>
+				<h3>内蔵コマンド/関数の引数は最大8個</h3>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+== JavaScriptでHyperTalkを実現するのは簡単? ==
+難しいわーー!!!
+
+
+* JavaScriptは処理の完了を待たない非同期型（Sleepできない）、HyperTalkは同期型(waitできる)
+* JavaScriptは自動で型変換するので、予想外の変換が起こったりする。
+* HyperTalkは大文字小文字を無視する
+* HyperTalkのチャンク式(char,item,word,line)への対応
+
+== wait ==
+WebブラウザではJavaScriptコードをすべて実行し終わってから画面が更新されるので、「wait」を使ったアニメーションができません。また、JavaScript実行中にキーやマウスの状態変更を調べられないので、「repeat while the mouse is down」などを実現するのに困ります。
+
+HCjsではWebWorkersを使って、スレッド対応してビジーループでwaitを実現しています。また、Web SQL Databaseを使って、ビジーループ中に情報のやり取りができるようにしています。こんなことをしているせいでChromeですらちゃんと動かず、Safariのみ対応になってしまいました。

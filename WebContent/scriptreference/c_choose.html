@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>choose</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>choose tool ツール番号</h3>
+<h3>choose ツール名 tool</h3>
+<p>ツールを切り替えます。
+</p>
+<ul>
+	<li>1: browse</li>
+	<li>2: button</li>
+	<li>3: field</li>
+	<li>4: select</li>
+	<li>5: lasso</li>
+	<li>6: pencil</li>
+	<li>7: brush</li>
+	<li>8: eraser</li>
+	<li>9: line</li>
+	<li>--10: spray</li>
+	<li>11: rect</li>
+	<li>--12: round rect</li>
+	<li>13: bucket</li>
+	<li>14: oval</li>
+	<li>--15: curve</li>
+	<li>16: text</li>
+	<li>17: reg poly</li>
+	<li>18: poly</li>
+	<li>: magicwand</li>
+</ul>
+<pre class=source>
+on mouseUp
+  choose button tool
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

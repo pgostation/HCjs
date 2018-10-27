@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>lock</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>lock screen</h3>
+<p>画面の更新を停止します。unlock screenで画面を更新します。
+</p>
+<pre class=source>
+on mouseUp
+  lock screen
+  hide me --この時点ではまだ画面に見えている
+  wait 1 sec
+  unlock screen --この時点で画面が更新される
+end mouseUp
+</pre>
+
+<h3>lock messages</h3>
+<p>カード移動によるメッセージ送信(openCardやcloseCard)を行わなくします。unlock messagesで、カード移動時にメッセージ送信を行うようになります。
+</p>
+<pre class=source>
+on mouseUp
+  lock messages
+  go next
+  unlock messages
+end mouseUp
+</pre>
+
+<h3>lock recent</h3>
+<p>カード移動の履歴(リーセント)の記録を停止します。unlock recentで記録するようになります。
+</p>
+<pre class=source>
+on mouseUp
+  lock recent
+  go next
+  unlock recent
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

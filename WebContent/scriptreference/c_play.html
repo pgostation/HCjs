@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>play</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>play soundリソース名</h3>
+<p>サウンドを鳴らします。harpsichord, flute, boingの3つは標準で音を出すことができます。それ以外の音はsoundリソースに音声ファイルを追加する必要があります。
+</p>
+<pre class=source>
+on mouseUp
+  play harpsichord
+end mouseUp
+</pre>
+
+<h3>play soundリソース名 (tempo テンポ) 音色文字列</h3>
+<p>指定の音色でサウンドを鳴らします。音色文字列は空白区切りで音符を指定します。
+</p>
+<ul>
+	<li>c d e f g a b: 音階ドレミファソラシに対応します</li>
+	<li>0-7: オクターブ指定。省略時は前の音符と同じになる。初期値4</li>
+	<li># b: シャープとフラット</li>
+	<li>r: 休符</li>
+	<li>音の長さ (省略時は4分音符)
+		<ul>
+			<li>w: 全音符</li>
+			<li>h: 2分音符</li>
+			<li>q: 4分音符</li>
+			<li>e: 8分音符</li>
+			<li>s: 16分音符</li>
+			<li>t: 32分音符</li>
+			<li>x: 64分音符</li>
+		</ul>
+		<ul>
+			<li>3: 3連符</li>
+			<li>.: 付点</li>
+		</ul>
+	</li>
+	<li>p f: ピアノとフォルテ</li>
+</ul>
+<pre class=source>
+on mouseUp
+  play &quot;flute&quot; tempo 100 c4 d e fw rq g#
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

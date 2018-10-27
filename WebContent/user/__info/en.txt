@@ -1,0 +1,4 @@
+<div class="left">April 8, 2012</div>
+<div class="right">
+Developping with iPad.
+</div>

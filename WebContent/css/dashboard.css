@@ -1,0 +1,87 @@
+#main0 {
+	position:relative;
+	left: 50%;
+	margin-left: -140px;
+	width: 280px;
+}
+#main00 {
+	position:relative;
+	left: 50%;
+	margin-left: -240px;
+	width: 480px;
+}
+#main00 .ui-content{
+	overflow:visible;
+}
+#main01 {
+	position:relative;
+	left: 50%;
+	margin-left: -480px;
+	width: 960px;
+}
+#main1 {
+	position:relative;
+	left: 50%;
+	margin-left: -300px;
+	float: left;
+	width: 280px;
+}
+#main2 {
+	position:relative;
+	left: 50%;
+	margin-left: 20px;
+	width: 280px;
+}
+
+@media screen and (max-width: 640px) {
+  #main0,
+  #main00,
+  #main1,
+  #main2 {  
+	position: default;
+	left: 0px;
+	margin-left: 0px;
+    float: none;  
+    width: auto;  
+  }
+}
+@media screen and (max-width: 960px) {
+  #main01{  
+	position: default;
+	left: 0px;
+	margin-left: 0px;
+    float: none;  
+    width: auto;  
+  }
+}
+
+
+.left {
+	float: left;
+}
+
+.right {
+	margin-left: 10px;
+	float: left;
+}
+
+/* ‰æ‘œ”wŒi */
+.backgroundTile {
+  background-color: #fff;
+	background: -moz-linear-gradient(left top, #FFF, #FFF 25%, #EEE 25%, #EEE 50%,
+		#FFF 50%, #FFF 75%, #EEE 75%,#EEE);  
+    background: -webkit-gradient(linear, left top, right bottom,
+		from(#FFF), color-stop(25%, #FFF), color-stop(25%, #EEE), color-stop(50%, #EEE), 
+		color-stop(50%, #FFF), color-stop(77%, #FFF), color-stop(77%, #EEE), to(#EEE));  
+    /*-moz-background-size: 16px 16px;*/
+    -webkit-background-size: 16px 16px;
+    background-size: 16px 16px;
+}
+
+
+.source {
+	background: #fff;
+	font-size: 1.1em;
+	border: solid 1px #888;
+	padding: 4px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>定数</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>定数</h3>
+				<p>「&quot;」や改行など通常の表記では使えない文字を使う場合に定数を利用します。他にもいくつかの定数が定義されています。
+				</p>
+				<ul>
+					<li>empty 0文字。&quot;&quot;と同じ</li>
+					<li>quote &quot;を表す</li>
+					<li>return 改行を表す。Macの改行文字(\r)ではなくUNIXの改行文字(\n)</li>
+					<li>tab タブ文字を表す</li>
+					<li>formfeed 改ページ(\f)を表す</li>
+					<li>linefeed returnと同じくUNIXの改行文字(\n)を表す</li>
+					<li>carriagereturn Macの改行文字(\r)を表す</li>
+					
+					<li>true 論理値で真を表す</li>
+					<li>false 論理値で偽を表す</li>
+					
+					<li>pi 円周率を表す</li>
+					<li>comma コンマを表す</li>
+					<li>space 空白(半角スペース)を表す</li>
+					<li>up &quot;up&quot;と同じ</li>
+					<li>down &quot;down&quot;と同じ</li>
+					<li>zero one two three four five six seven eight nine: 各数値を表す</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

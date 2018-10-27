@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>visual</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>visual (effect) 視覚効果 (時間) (to イメージ)</h3>
+<p>次のカード移動時に視覚効果付きで移動します。
+</p>
+<ul>
+	<li>視覚効果<br>
+		<ul>
+			<li>dissolve</li>
+			<li>push left/right/up/down</li>
+			<li>wipe left/right/up/down</li>
+			<li>scroll left/right/up/down</li>
+			<li>iris open/close</li>
+			<li>zoom open/close/in/out</li>
+			<li>stretch from bottom/top/center</li>
+			<li>shrink to bottom/top/center</li>
+			<li>barn door open/close</li>
+			<li>venetian blinds</li>
+			<li>checkerboard</li>
+			<li>fade</li>
+		</ul>
+	</li>
+	<li>時間<br>
+		<ul>
+			<li>very fast: 0.125秒</li>
+			<li>fast: 0.25秒</li>
+			<li>指定なし: 0.5秒</li>
+			<li>slow: 1秒</li>
+			<li>very slow: 2秒</li>
+		</ul>
+	</li>
+	<li>イメージ<br>
+		<ul>
+			<li>(未実装) black</li>
+			<li>(未実装) white</li>
+			<li>(未実装) gray</li>
+		</ul>
+	</li>
+</ul>
+<pre class=source>
+on mouseUp
+  visual effect dissolve fast to black
+  go next
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

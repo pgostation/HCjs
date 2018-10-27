@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>unlock</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>unlock screen</h3>
+<p>lock screenで停止した画面を更新します。
+</p>
+<pre class=source>
+on mouseUp
+  lock screen
+  hide me --この時点ではまだ画面に見えている
+  wait 1 sec
+  unlock screen --この時点で画面が更新される
+end mouseUp
+</pre>
+
+<h3>unlock screen with 視覚効果</h3>
+<p>lock screenで停止した画面から視覚効果付きで現在の画面を表示します。視覚効果はvisualコマンドと同じです。
+</p>
+<pre class=source>
+on mouseUp
+  lock screen
+  hide me
+  unlock screen with dissolve
+end mouseUp
+</pre>
+
+<h3>unlock messages</h3>
+<p>lock messagesで停止したカード移動時のメッセージ送信を行うようにします。
+</p>
+<pre class=source>
+on mouseUp
+  lock messages
+  go next
+  unlock messages
+end mouseUp
+</pre>
+
+<h3>unlock recent</h3>
+<p>lock recentで停止したリーセントの記録を再開します。
+</p>
+<pre class=source>
+on mouseUp
+  lock recent
+  go next
+  unlock recent
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

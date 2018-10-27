@@ -1,0 +1,981 @@
+log
+
+2011/11/27
+  HTML5の本を購入
+2011/12/02
+  tomcatインストール
+2011/12/03
+  HyperFoobarという名前にする
+  tomcatでservletを動かして、html表示
+2011/12/04
+  HyperTalk to JavaScript(http://lexnet.bravepages.com/HTMLJS.htm)
+2011/12/10
+  HTML+CSSでフィールドやボタンの見た目を作る
+  canvasで画像をhiliteしてみる
+  touchイベントと戯れる
+2011/12/11
+  マルチタッチでハイライト制御
+  HTML+CSS+JSでメニューっぽい動きを作る
+  JavaScript:390行
+2011/12/12
+  サブメニュー
+2011/12/17
+  use strict
+  カード移動、視覚効果
+  JavaScript:947行
+2011/12/18
+  iPadでのメニュー
+  ファイルアップロード,XML,JSON出力
+  JSONの読み込み、JSONデータからの画面構築
+  カードピクチャ対応、prev,nextメニュー対応
+  Java:5709行 JavaScript:1112行
+2011/12/19
+  navパレット
+  次のカードピクチャをプリロード
+  バックグラウンドも表示
+2011/12/21
+  index.jsp _login.jsp, err.jsp作成
+  FORM認証
+2011/12/22
+  jspファイル分割
+  stackinfo.jsp作成
+2011/12/23
+  jsp作成進める。あと、利用規約、プライバシーポリシー
+  Java:5731行 JavaScript:1240行 JSP:1013行
+2011/12/24
+  jsp作成進める。
+  web側にスタックプレイヤーを組み込む
+  (jspでjavaBeansを使うときにWEB-INFのclassesにコピーしないといけない、と思ったけど動いている。何？)
+  自作のスタック一覧が表示できるように。日付順で。
+  JSへの変換作りはじめ。JSに変換すると、waitが実現できない。SetTimeoutで動くVMを作ることにする。
+  ボタンツール作りはじめ
+  Java:7456行 JavaScript:1325行 JSP:1055行
+2011/12/25
+  ボタン情報ダイアログの表示
+  iPadのsafariでフォーム入力時にスクロールしても戻るようにした
+  useBeanタグを上のほうに持っていくと動く？
+  スタック情報を_stackinfo.xmapに入れる
+  スクリプトエディタ、テキストで表示のみ
+  Java:7484行 JavaScript:1467行 JSP:1181行
+2011/12/26
+  テキスト改行されていなかったのを修正
+  アイコン表示対応
+  PICTボタン表示
+2011/12/27
+  ボタン、フィールドのフォントスタイル対応
+  フィールド情報ダイアログの表示
+  Java:7518行 JavaScript:1673行 JSP:1283行
+2011/12/28
+  カード、バックグラウンド、スタック情報ダイアログの表示
+  カードのmarkedプロパティのHCスタックからの読み込み対応
+  HCスタック変換時のdebug出力を動くようにした
+  Cookieで現在のカードを保存
+2011/12/29
+  画像ファイルのアップロード→ボタン作成
+  Java:7655行 JavaScript:2066行 JSP:1350行
+2011/12/30
+  ボタンのJavaScriptを動かせた。eval。
+  JavaEE + WTP環境で動かす
+  Java:7789行 JavaScript:2140行 JSP:1344行
+2011/12/31
+  getfileサーブレットでファイル取得
+  answerコマンド対応。いや、ダイアログ表示中はスクリプト止めないと。
+  waitどうやって対応しよう。yield使えるのfirefoxだけか。pause();および関数オブジェクトの文字列を正規表現で調べる。
+  プロパティはsetter/getter使えばいいのか。
+  Java:7968行 JavaScript:2329行 JSP:1358行
+2012/01/01
+  iconプロパティ変更に対応
+  msgboxからのコマンド入力に対応
+  情報ダイアログからのプロパティ変更に対応
+  Java:8068行 JavaScript:2555行 JSP:1362行
+2012/01/02
+　変更したスタックのJSONをサーバにAjax保存
+  Java:8073行 JavaScript:2632行 JSP:1362行
+2012/01/03
+  オーサリングでのボタン移動、大きさ変更
+  ボタン、フィールドパレット
+  フィールドをtextareaからdivでcontenteditableに変更する
+  Java:8073行 JavaScript:2796行 JSP:1409行
+2012/01/04
+  オーサリングでのフィールド移動、大きさ変更
+  Java:8119行 JavaScript:2880行 JSP:1413行
+2012/01/05
+  メッセージボックス等の移動
+  新規カード、バックグラウンド
+  バックグラウンド編集
+  Java:8114行 JavaScript:2999行 JSP:1414行
+2012/01/06
+  新規スタック
+  Java:8204行 JavaScript:2999行 JSP:1464行
+2012/01/07
+  Firefox対応など
+  スクリプトの変更を保存、フィールドのテキスト変更を保存、フィールドのフォントスタイルHTML適用
+  スクリプトのコンバートのservletを用意
+  getfileで304に対応
+  スクリプトのネスト解析作りはじめ
+  Java:8885行 JavaScript:3200行 JSP:1468行
+2012/01/08
+  スクリプトのネスト解析作成、JSへの変換を修正作業中
+  Java:9946行 JavaScript:3292行 JSP:1468行
+2012/01/09
+  JSへの変換を修正作業中
+  definePropertyでgetter/setter作成
+  JavaScriptでプロパティ、コマンド、メッセージ、オブジェクト取得など作りはじめ
+  (show/hide,clicklineなどmouse関連)
+  Java:10423行 JavaScript:3431行 JSP:1468行
+2012/01/10
+  フィールドの行select
+  visualとgo
+  セキュリティのためHyperTalkに不明文字があればコメントにする
+  チャンクへの代入を実現する方法を考える
+  Java:10491行 JavaScript:3592行 JSP:1468行
+2012/01/11
+  チャンクへの代入作業中
+  キーボードショートカット対応コード作成
+  nth-childで行表示→うまくいかない　　SVGで行表示
+  Java:10512行 JavaScript:3702行 JSP:1468行
+2012/01/12
+　svgの「線を表示」をスクロールしても途切れないように
+  オブジェクトのチャンクへの代入（変数はまだ）
+  ダイアログ表示中やフィールドへの入力中はキーボードショートカットを動作させない
+  opt+cmdでパーツが浮かび上がり、クリックでスクリプトエディタ表示
+  新規スタックでのサイズ指定
+  Java:10512行 JavaScript:3811行 JSP:1468行
+2012/01/13
+  ボタンパレットの動作を改善
+2012/01/14
+  スタック情報ページにコメント機能追加
+  SVGによるCAPTCHA機能
+  カードピチャをクリックしても、bgにあるボタンをクリックできるようにした
+  カードピクチャの透過部分のコンバートを修正
+  スクリプト処理のウェイト対応、簡単なものなら動くように
+  オブジェクトウィンドウを作りはじめ
+  Java:10816行 JavaScript:4082行 JSP:1627行
+2012/01/15
+  ハッシュ指定でカードに直接リンク
+  オブジェクトウィンドウ作成、順番の入れ替えにも対応
+  ボタン、フィールドの右クリックメニュー
+  2重チャンク問題
+  チャンク代入の変数対応作成中
+  Java:10871行 JavaScript:4540行 JSP:1659行
+2012/01/16
+  文字列の連結と加算では加算を優先する
+  オンライン/オフラインアイコン作成、保存中は回転、スクリプト実行(pause)中は走る人
+  Java:10897行 JavaScript:4573行 JSP:1659行
+2012/01/17
+  vmVarをwithにする
+2012/01/18
+  vmWaitScript回り修正
+  ボタン、フィールド、カードのDelete,コピペ
+  Java:10897行 JavaScript:4711行 JSP:1659行
+2012/01/19
+  vmWaitScript回り修正
+  カードのback,forward対応
+  リーセント対応
+  縦書きプロパティ追加
+  Java:10897行 JavaScript:4798行 JSP:1659行
+2012/01/20
+  ツールパレットのティアオフ
+  Java:10897行 JavaScript:4993行 JSP:1686行
+2012/01/21
+  jsonデータの分割は挫折(途中までのデータでスクリプト実行時の矛盾解決が無理)
+  独自カーソル対応
+  ペンシルツール作成開始。ピクチュアのアップロード。ローカルにはsessionStorageで。
+  Java:10943行 JavaScript:5439行 JSP:1768行
+2012/01/22
+  ペイントのUndo,Redo
+  ペンシルのビット表示対応
+  カラーパレット作成中
+  Java:10943行 JavaScript:5765行 JSP:1793行
+2012/01/23
+  カラーパレットで単色の選択が完成
+  ペンシルツールでスポイト動作
+  Java:10943行 JavaScript:5919行 JSP:1802行
+2012/01/24
+  カラーパレット改良中
+  ブラシツール作成開始
+2012/01/25
+  ブラシツール作成中(半透明対応、サイズ変更)
+  ブラシ用パレットタブ作成
+  Java:10943行 JavaScript:6242行 JSP:1836行
+2012/01/26
+  ブラシツール作成中(テクスチャ対応)
+  選択ツール作成中(アップロード、範囲選択、選択範囲移動、固定)
+  Java:10950行 JavaScript:6412行 JSP:1866行
+2012/01/27
+  Firefox互換性アップ(視覚効果など)
+  選択ツール作成中(opt移動、ツール終了、deleteキー、コピー、ペースト)
+  Java:10953行 JavaScript:6529行 JSP:1866行
+2012/01/28
+  消しゴムツール対応
+  ツールパレットのダブルクリック対応
+  mousedoubleclickに対応したつもり
+  バケツツール対応(単色、線形グラデーション(複数)、放射グラデーション(複数)、パターン)
+  線形、放射グラデーション、パターンのパレット作成
+  投げ縄ツール対応
+  Java:10953行 JavaScript:7711行 JSP:1883行
+2012/01/29
+  マジックワンドツール対応
+  クリップボードウィンドウで画像貼付けられないか調べるがセキュリティエラーになるね
+  ライン、矩形、楕円ツール対応
+  文字ツール対応
+  Java:10953行 JavaScript:8807行 JSP:1912行
+2012/01/30
+  アリの行進を動かす
+  バグ修正(バックグラウンドのピクチャ対応、バケツでスポイトツール、削除でアリの行進も消す、拡大時もちゃんとフローティングの場所でカーソル変える)
+  Java:10953行 JavaScript:8899行 JSP:1913行
+2012/01/31
+  ペイントモードでoptキーなどを押したときにカーソルをそれっぽく変更
+  テーブルでマジックワンド高速化
+  Java:10953行 JavaScript:9003行 JSP:1913行
+2012/02/01
+  ペイント拡大時の自前描画でアンチエイリアスなし
+  Java:10953行 JavaScript:9098行 JSP:1913行
+2012/02/02
+  ペイントメニュー(select all, zoom in/out, reverse selection)
+  Java:10953行 JavaScript:9257行 JSP:1941行
+2012/02/04
+  選択範囲をマスクで実装しなおし
+  ペイントメニュー(expand selection, fill, pickup, darken, lighten. opaque, transparent, flipH, flipV)
+2012/02/05
+  Web SQL Databaseでループ中にイベント受信を可能にした
+  script editorをtextareaにしてたら、一度手動で変更するとtextContent変えても反映されない・・・。
+  Java:10953行 JavaScript:10894行 JSP:1941行
+2012/02/06
+  ボタンをiOSっぽく
+  iOSのフォントをselectに出す
+  Java:10953行 JavaScript:10967行 JSP:1952行
+2012/02/08
+  表スレッドはstackObjを持たないようにする
+2012/02/09
+  workerでカード移動とリーセントを動かせるようにする
+  Java:10953行 JavaScript:11073行 JSP:1952行
+2012/02/11
+  workerでオーサリング対応、ペイント対応
+  workerはキャッシュされるのでrandom文字列を付ける
+  ボタンのdisabled表示対応
+  Java:10953行 JavaScript:11297行 JSP:1952行
+2012/02/12
+  worker対応進める
+  HSVマジックワンド
+  Java:10945行 JavaScript:11330行 JSP:1952行
+2012/02/13
+  answer,askコマンド対応。ダイアログ表示中はスクリプト止められる。
+  Java:10945行 JavaScript:11432行 JSP:1964行
+2012/02/14
+  Tomcatが壊れた。プロジェクト右クリック、Profile AsでProfile to serverを選択で直った。さらに.javaをビルドするために変更して保存
+  popupでのcopy/paste object対応
+  Java:10945行 JavaScript:11415行 JSP:1964行
+2012/02/14
+  ボタンのプロパティ実装進める
+  Java:10945行 JavaScript:11453行 JSP:1964行
+2012/02/18
+  スクリプト動作を進める(HCアクション講座)
+  Java:10945行 JavaScript:11414行 JSP:1964行
+2012/02/19
+  スクリプト動作を進める(HCアクション講座)
+  視覚効果dissolve, venetian blinds, checkerboardの再現
+  Java:11031行 JavaScript:11562行 JSP:1965行
+2012/02/29
+  コマンドテストスタック作成中
+  Java:11040行 JavaScript:11663行 JSP:1965行
+2012/03/01
+  比較演算にtoLowerCase()を付ける
+2012/04/07
+  プロジェクト名をHC.jsにする
+  GlassFishに環境を移し、jQueryMobileでページ作成
+2012/04/08
+  レスポンシブレイアウト
+  ヘルプを簡単に作る
+  ゲストIDと認証
+  Java:11100行 JavaScript:11708行 JSP:224行
+2012/04/09
+  自前認証なのでrequest.getRemoteUser()を置き換える
+  ログアウト
+  スクリプトリファレンス土台
+  stackinfo.jsp stacks.jsp
+2012/04/10
+  セッションIDはglassfishのものを使う
+  スタック一覧、スタック情報表示、ユーザ情報、ユーザ設定
+  Java:11105行 JavaScript:11708行 JSP:1684行
+2012/04/11
+  ファイル管理、スタック検索
+  Java:11117行 JavaScript:11708行 JSP:1805行
+2012/04/12
+  スタック検索、スタック情報変更
+  ./userを../userに移行
+  vps初期設定、glassfishをvpsに入れる
+2012/04/13
+  vpsにHC.js.war配置して起動
+  fileuploadがうまくいかない。servlet3.0仕様にするか。
+  Java:11286行 JavaScript:11708行 JSP:1912行
+2012/04/14
+  fileupload:
+    classファイルをWEB-INF/classesに入れないといけなかった
+    jQuryMobile formのdata-ajax=false
+  ページにHomeボタン追加
+  ページの日英表示対応進める
+  jspエラー画面をerror_page.jspにする。error-pageを404.jspとかにする
+  ユーザ情報変更、アカウント削除、スタック削除など
+  スタック検索を新着ソート、カテゴリ別に
+  getfileのアクセス制御をまともにする
+  Java:11585行 JavaScript:11708行 JSP:2192行
+2012/04/15
+  インジェクションアタック対策(&,",\,日本語あたり)
+  ディレクトリのサイズ表示(_dirsize) 
+  ユーザディスク領域50MB制限、制限にかかるとアップロード禁止
+  スタックのコピー
+  Java:11747行 JavaScript:11708行 JSP:2293行
+2012/4/16
+  Linuxで日本語ファイル名が化ける
+    ->vi $HOME/.bash_profileでexport LANG=ja_JP.UTF-8追加
+  WEBページの細かな修正
+  Java:11766行 JavaScript:11708行 JSP:2478行
+2012/4/17
+  わぁい新しいiPadあかり新しいiPad大好き
+  お知らせを外部テキストに(__info/ja.txt)
+  stackidを付ける
+  finder.jspのIMG表示改善
+  Java:11774行 JavaScript:11708行 JSP:2494行
+2012/4/18
+  多重ログイン対応
+  スタック保護(設定画面のみ)
+  zipアーカイブダウンロード
+  zipアーカイブをアップロードできるように。HCスタックアップロードのところに入れる。
+  (ディレクトリがあって、その中に_stack2.jsonファイルがあればスタックとして扱う)
+  Java:12223行 JavaScript:11708行 JSP:2523行
+2012/4/19
+  stackplayer2.jsp作りはじめ
+  Java:12225行 JavaScript:11708行 JSP:3193行
+2012/4/21
+  stackplayer2.jspのjQueryMobile使用
+2012/4/22
+  メニューのjQueryMobile使用
+  Java:12225行 JavaScript:10905行 JSP:2710行
+2012/4/23
+  スタック拡大表示
+2012/4/26
+  jQuery UIとtouch-punch使うか。
+2012/4/28
+  jQuery UIでタッチ対応中。（メニュー、answer,ask,ボタンとフィールドのドロップ、ブラウズ、オーサリング）
+  touch-punchは要らないのではないかと思ったが、ドラッグアンドロップに使う。
+  Java:12222行 JavaScript:11216行 JSP:3137行
+2012/4/29
+  visual effect復活(directionのマッチがうまくいっていなかった)
+  アコーディオンによる各情報表示
+  リーセントのタッチ対応
+  タブ版スクリプトエディタ作成開始
+  Java:12222行 JavaScript:11447行 JSP:3088行
+2012/4/30
+  仮想クリック (ラジオボタンやチェックボックスのon/off)
+  マウスでのdraggableが動かんようになった。昨日の終わりには動いてた。->新しいスタックでは動く。
+  スクリプトエディタ作成中
+  スタック変換のx-macRoman対応(SJISと選択なので組み合わせたのには非対応)
+  16bit PICT読み込み対応
+  文字列を含むPICT対応
+  メッセージボックス復活(スクリプト実行はどうすれば？)
+  helpダイアログ
+  background編集時にメニューバースタイルを変える
+  Scaling on/off
+  ペイントパレット復活中
+  タッチでのペイント対応
+  Java:12517行 JavaScript:11693行 JSP:3095行
+2012/5/1
+  Scaling時のペイント対応
+  ダイアログでのajaxログイン対応(ペイントはまだ)
+  effectメニューなど
+  パレット全体でdraggableに
+  グラデーション部分のドラッグがうまくいかない（draggableにする？）
+  glassfish3.1.2ではcommons-fileuploadがうまく動かない
+2012/5/4
+  iPadでのペイント対応進める
+  Java:12530行 JavaScript:11853行 JSP:3105行
+2012/5/10
+  arrowkeyコマンド
+  chooseコマンド
+  Java:12530行 JavaScript:11904行 JSP:3105行
+2012/5/11
+  clickコマンド
+  メニューからhrefを排除
+  Java:12530行 JavaScript:11962行 JSP:3105行
+2012/5/12
+  finder.jspサムネイル対応
+  ogg,wavへの変換、finder.jspでaudio対応(なぜかsafariでは読み込み中のままになる)
+  jsでencodeURI指定されていなかったのを修正
+  opt-cmd+1,2,3でスクリプト編集
+  open/read/write/close fileコマンド
+  スクリプトエディタ閉じるときにフォーカスを無理矢理はぎ取る
+  Java:12926行 JavaScript:12092行 JSP:3129行
+2012/5/13
+  Convertコマンド
+  browserLangをworkerから参照できるように
+  deleteコマンドでチャンクの扱いに困る。
+  deleteMenuコマンド
+  ボタンがdisabledだとイベントが発生しないので、ボタン情報を表示させることもできないのを修正
+  disable,enableコマンド(ボタン)に対応(property.jsのchangePropFrameで対応しないと画面に反映されない)
+  resetMenubarコマンド(menuitem対応してない)
+  disable/enable Menuコマンド
+  edit scriptコマンド
+  Java:12973行 JavaScript:12389行 JSP:3129行
+2012/5/14
+  find用input
+  findStringコマンド作成中
+  Java:12977行 JavaScript:12469行 JSP:3129行
+2012/5/15
+  フィールド文字保存されるように。
+  findStringで最初の検索結果を選択状態にできるように作成中
+2012/5/16
+  findStringで最初の検索結果を選択状態にできるように作成中
+  フィールドでspanの入れ子を抑制
+  Java:12977行 JavaScript:12526行 JSP:3136行
+2012/5/17
+  JamWiki導入
+2012/5/19
+  findStringでfind next対応
+  foundChunkなどに対応
+  lock/unlock screenに対応
+  paletteのデータをjson2に保存する
+  Java:12984行 JavaScript:12707行 JSP:3135行
+2012/5/20
+  paletteCmd対応
+  メッセージボックスやdoScriptでメッセージ送信のみ対応
+  数字+英字は単語分割する
+  pictureコマンド対応
+  playコマンド対応(Webkit nightlyでターミナルからコマンド打たないとだめ。)
+    defaults write com.apple.Safari WebKitWebAudioEnabled -bool YES
+    defaults write com.apple.Safari com.apple.Safari.ContentPageGroupIdentifier.WebKit2WebAudioEnabled -bool YES
+  push/popコマンド対応(現在のカードのみ)
+  Java:13000行 JavaScript:13123行 JSP:3134行
+2012/5/21
+  selectコマンドで行選択対応
+  フィールド行の自動選択対応
+  show all cards, show x cards対応
+  sortコマンド(item,line)対応
+  Java:13068行 JavaScript:12993行 JSP:3134行
+2012/5/22
+  HyperTalk関数作成中
+  ボタンとフィールドのカット、コピー、ペースト、削除に対応
+  検索がtouch対応していなかったのを修正(touchendにfocus()入れる)
+  answerで閉じたあとにmouseUpが発生するのを修正(touchendでpreventDefault入れる)
+  Java:13080行 JavaScript:13154行 JSP:3146行
+2012/5/23
+  HyperTalk関数作成中
+  Java:13121行 JavaScript:13353行 JSP:3146行
+2012/5/24
+  スタック情報に作成バージョンや編集不可など、高さと幅を追加
+  カード削除対応
+  変更不可、削除不可のプロパティ対応
+  ボタンプロパティ表示テスト、カードプロパティ表示テスト
+  PICTボタンが表示されていなかったのを修正(getResourceByIdをgetResourceに修正)
+  globalはglobal.xxxのように扱う
+  Java:13245行 JavaScript:13491行 JSP:3166行
+2012/5/25
+  hypertalkコンバートの互換性アップ
+  チャンクの扱いをit.set(2).line() =からit = setline(it,value,2)に変える
+  ポップアップメニューのテキスト変更が即反映されるようにした
+  kstealkeyx2対応
+  openstackイベント対応
+  Java:13288行 JavaScript:13604行 JSP:3166行
+2012/5/26
+  hypertalkコンバートの互換性アップ
+  uxanswer暫定対応
+  HyperCardスタックの読み込みのずれに対応
+  Java:13389行 JavaScript:13793行 JSP:3168行
+2012/5/27
+  play stop対応
+  ppat,ics8対応、cicnの4bit,2bitの場合の問題を修正
+  uxback対応
+  NoMeMoBustersな機能追加
+  Mac特殊文字対応？(ハート、ダイヤ)
+  addcolor対応作業中
+  Java:14008行 JavaScript:14018行 JSP:3168行
+2012/5/28
+  addcolor対応作業中
+  Java:13923行 JavaScript:14141行 JSP:3168行
+2012/5/29
+  HC速度計で高負荷時の処理改善中
+   スクリプト実行:6200
+   カード移動:50
+   アイコン表示:130
+   テキスト表示:460
+  setPartsRectでByClassNameを使うように修正して高速化→
+   スクリプト実行:6200
+   カード移動:40-60
+   アイコン表示:200
+   テキスト表示:730
+  iPadでは
+   スクリプト実行:614-625
+   カード移動:29-52
+   アイコン表示:20-31
+   テキスト表示:51-70
+  PICTのリージョンがオフセットされていた場合の問題修正
+  Java:13939行 JavaScript:14018行 JSP:3168行
+2012/5/30
+  変数名に"enum"などのjsキーワードを使っていた場合の問題修正
+  set toでchar 1 to 2 のようにtoがまた出てきたときの対策
+  answer 1 with ("ok")で括弧の処理がLFUNC,RFUNC扱いになっていたのを修正
+  cd 1 of this bg対応
+  cd fld x in cd x 対応
+  Java:14026行 JavaScript:14018行 JSP:3168行
+2012/5/31
+  add/subtract/multiply/divideで代入先チャンクに対応
+  名前が変わったらPICTボタン変更
+  プロパティ変更でrequestAnimationFrame
+   スクリプト実行:6200
+   カード移動:50-60
+   アイコン表示:170-225
+   テキスト表示:600-700
+  select first line of対応
+  addでvar ma += j;になってしまうの防止
+2012/6/1
+  deleteチャンク対応
+  iconのキャッシュなど高速化
+   スクリプト実行:6200
+   カード移動:57-62
+   アイコン表示:220-240
+   テキスト表示:620-650
+  hideなどで.text)のreplaceをreplaceLast的にする
+  Java:14142行 JavaScript:14131行 JSP:3168行
+2012/6/2
+  hypertalkコンバートの互換性アップ
+  NoMeMoBustersは半角カナのあるときしか働かないようにする
+  はいぱあれもんvol.6 を読めるようにする。PAGEブロック読み込み強化,firstCardを先頭にする
+  domenu "quit hypercard"できるようにする
+  カード移動で待つようにしたので遅くなった。Safari5.1.7
+   スクリプト実行:5000
+   カード移動:13
+   アイコン表示:240
+   テキスト表示:590
+  Java:14281行 JavaScript:14223行 JSP:3168行
+2012/6/3
+  indexでguestId生成しない
+  1MBを超えるJSONをuploadできない(サーバの設定次第っぽいけど)
+  →jsonの分割アップロード対応
+  idle対応
+  パレット、ピクチャの対応強化
+  秘密結社ゲームプレイ
+  Java:14667行 JavaScript:14376行 JSP:3169行
+2012/6/4
+  returnでanswer/askのボタンを押す
+  idleでテキストの変更時の自動保存。うまくいってるならテキスト意外でもやる。
+  select the clickline対応
+  editBackgroundが動かなくなっていたのを修正
+  put x into line i of xxを改善
+  Java:14693行 JavaScript:14451行 JSP:3169行
+2012/6/5
+  メニューバーの表示非表示
+  ピクチャウィンドウの表示位置を合わせる
+  タッチでフィールドのスクロール可能に
+  +演算子は数値に変換してから実施
+  selectedtextなどがプロパティになっていたのを関数に修正
+  Java:14701行 JavaScript:14492行 JSP:3169行
+2012/6/6
+  スクリプトエディタでのHTMLタグ除去
+  スクリプトエディタでのキーボードショートカット対応
+  スクリプトエディタ 自動インデント対応中
+2012/6/7
+  スクリプトエディタ 自動インデント対応
+  スクリプトエディタ コメント色付け対応、elseのインデント正確に
+  ボタン内容の編集ダイアログ
+  stackplayerの日英対応中
+  Java:14701行 JavaScript:14680行 JSP:3177行
+2012/6/8
+  stackplayerの日英対応中
+2012/6/9
+  jsの日英対応
+  メニューの日英対応
+  ボタン/フィールドを前面に出す、背面に送るに対応
+  setjson.javaするときencodeURIしていなかったバグ修正
+  フォントダイアログ作成中
+2012/6/10
+  フォントダイアログ作成
+  setjsonまっさらの状態から保存できないバグ修正
+  リソースエディタ作成中
+  Safariでaudio対応(getfileでHTTPリクエストRange対応)
+  ICON選択ダイアログ対応
+  autoHiliteやiconScalingが保存できなかったのを修正(typo修正、プロパティは一つずつworkerに送る)
+  Java:14754行 JavaScript:15419行 JSP:3274行
+2012/6/11
+  リソースエディタ作成中。ペイント対応中。
+  カラーパレット動作改善？
+  Java:14754行 JavaScript:15514行 JSP:3282行
+2012/6/12
+  リソースエディタで拡大表示
+2012/6/14
+  リソースエディタでそれっぽくペイントできるように
+  Web Audio APIで波形表示
+  Java:14754行 JavaScript:15783行 JSP:3281行
+2012/6/15
+  Web Audio APIで周波数表示させようと思うが挫折
+  Java:14754行 JavaScript:15871行 JSP:3281行
+2012/6/16
+  リソースエディタ、ショートカットキー対応、カーソルキーで選択
+  リソースアイテムのコピペ、削除対応。オンラインでコピーするので他のスタックにも。
+  新規リソースタイプ。
+  新規リソース項目。リソース画像サイズ変更 
+  cgi部にuserLevel導入。チュートリアルスタック作成中。
+  保護しているときは青いメニューにする。
+  　黒：他のユーザが使っているか、自分で使っていても保護されているとき
+  　青：自分で使っていて保護されていないとき。マスターを変更する。
+  Java:15167行 JavaScript:16311行 JSP:3406行
+2012/6/17
+  リソースエディタ修正
+  リソースエディタにファイルドロップ対応
+  masterEditMode対応中・・・こんなんできる？
+  Java:15177行 JavaScript:16449行 JSP:3406行
+2012/6/20
+  masterEditMode削除(オーサリングできるのはマスター状態のみとするが。)
+2012/6/22
+  リソース情報変更を保存
+  リソース編集のundo対応
+  PNG以外を編集するときは警告
+  秘密結社ゲームのサウンドはAIFF format1で圧縮なのか。これに対応。11025Hz固定。
+  soxはUnsupported AIFC compression type `MAC3'なのか。
+  リソースエディタのinput type=fileでの画像アップロード対応
+  itemDelimiter対応
+  authoringでoption複製
+  PgColorX対応中
+  Java:15290行 JavaScript:16632行 JSP:3443行
+2012/6/23
+  KStealKeyX対応(2ではなく)
+  PgColorX対応
+  HyperCardからコンバートしなくてもXCMD/XFCN使えるようにする(リソースエディタ)
+  random of (256)のJavascript変換処理がうまくいっていなかったのを修正
+  GO PREV CARD OF BG"BG1"対応
+  PUT "T" INTO "DORT"対応
+  MARKED CARDの参照に対応
+  漢字1文字は文字列扱い
+  the last char of に対応
+  the secs対応
+  theの付いていないtarget対応
+  ポップアップボタンのselectedText対応
+  Java:15384行 JavaScript:17103行 JSP:3443行
+2012/6/24
+  KStealKeyXをiPadで使用するためのバーチャルパッド対応
+  メニューの初期リセット動作修正。ブラウズモードでオブジェクトメニュー付ける
+  ユーザ定義のメッセージが、カード移動と組み合わせるとうまく投げられなかったのを修正
+  if 変数 then の変数は"true"/"false"のはず
+  textSizeの動的変更に対応
+  CarChaserがかなり動くようになった!
+  selectedline of me対応
+  ヘルプ充実
+  Java:15390行 JavaScript:17347行 JSP:3443行
+2012/6/25
+  ヘルプ充実
+2012/6/26
+  ヘルプ充実
+  スクロールバーをiOSでも表示
+2012/6/30
+  位置系のプロパティ変更したらsetPartsRectしなおす
+  リソースエディタ表示でcardBack消す(iPadでスムーズになる？)
+  ペイントでファイルアップロードをメニューから選べるように
+  スタックごとのアクセスカウンタを付けた
+  Safari以外では警告を表示
+  Java:15401行 JavaScript:17399行 JSP:3469行
+2012/7/1
+  ローカルjsonデータ保存、読み込み
+  スタック情報ページに容量表示を追加、スタック一覧表示で全容量表示
+  マスター編集モードはuserIdがauthorと違うときはdisable
+  master/localを切り替えたときはデータを読み直しする
+    masterEditMode対応構想。プロパティ変更、新規カード、ボタン、ピクチャ変更、リソース変更
+      cardObj/bgObjにbitmapLocalプロパティ追加。これがtrueならbitmap fileはuser側にある
+      rsrcにfileLocalプロパティ追加。これがtrueならfileはuser側にある
+        →masterモードのときにuserデータは見えない。userモードのときmasterは半透明で表示する
+  drawScaledCanvas高速化
+  verticallyが設定できなかったのを修正
+  カード/bgピクチャもマスター編集モード適用
+  リソースもマスター編集モード適用
+  getfileとgetthumbnailで304 not modifiedを返す条件を修正
+  doMenuコマンドを日本語でも実行できるようにする
+  ヘルプ充実(コマンドを一通り作成)
+  Java:15420行 JavaScript:17641行 JSP:3565行
+2012/7/2
+  ヘルプ充実
+2012/7/5
+  number of menuitems of menu xx 対応
+    <session-config>
+    タイムアウト1週間くらい domains/domain1/config/default-web.xml <session-timeout>14400</session-timeout>
+2012/7/7
+  resultを返すコマンドでは成功時にresultを空白にする
+  selectedbutton対応、ラジオボタンのファミリーオートハイライト対応
+  ヘルプ充実(関数を一通り作成)
+  拡大ペイントを倍々コピーで高速化
+  管理ページ追加(admin専用)、guestId削除(admin専用)、adminは新規アカウントで作れないようにする
+  選択範囲の拡大縮小を実装
+  showNavigatorプロパティ実装
+  チュートリアルスタック作成
+  showPictプロパティを動作させる
+  Java:15487行 JavaScript:17846行 JSP:3688行
+2012/7/8
+  英語版チュートリアルスタックを作成
+  Java:15487行 JavaScript:17852行 JSP:3689行
+2012/7/10
+  60秒以内のスタック変更はlocalStorageに保存
+2012/7/14
+  ヘルプ充実(プロパティを一通り作成)
+  localStorage保存できたらdelete
+  ペイントで書いた絵が消える問題修正(hcNewCardでtype付いてなかったのを修正)
+  ボタン/フィールドの大きさ変更用アンカー表示
+  保護状態で開いたら警告表示
+  harpsichordやfluteを自前で用意
+  iPhoneではフルスクリーンになるようにしてみたけどiOS5では動かない
+  set cursor対応/iOSではスピン画像を表示
+  セッションID比較時にsessionIdの更新日を更新する
+  opacity対応
+  Java:15488行 JavaScript:18146行 JSP:3686行
+2012/7/15
+  id="page"をuser-select:noneにしていたせいでフィールドに入力できなかった問題を直す
+  お知らせが文字化けするのを修正(MacOSXではFileReaderがUTF-8じゃないねん)
+  スタック検索で改行が n で表示されていたのを修正(\nじゃなく%nにする)
+  setfileでdataの下にファイルが作れなかったのを修正(もう一段深いネストに対応)
+  ゲストでスタック作れない問題修正(userIDがnullの時エラーにしてた)
+  newaccount,createstackエラーの日本語化
+  iPadでフィールドのアンカーを動かせない問題
+    (touchStartのbtn.mousedown()の後にe.preventDefault();追加)
+  iPadでフォントダイアログ選択できない問題、スクリプトエディタがすぐ閉じる問題
+  iPadでペイントの選択範囲移動できない問題修正(floatigSVGにadddEventListener)
+  iPadでポップアップを動作(focusを実行)
+  iPadでフィールドに入力できない問題を修正(windowResizeでDIVならreturn)
+  Java:15510行 JavaScript:18168行 JSP:3695行
+2012/7/16
+  フィールドスタイルにstandardがあったのを削除
+  バックグラウンドフィールドの非共有テキストの変更ができなかったのを修正
+  ハイライトを共有とかテキストを共有の設定が無かったので作る
+  ボタンのオートハイライトでないハイライトがうまくいっていない
+  ハイライト共有していない場合のファミリーの動作をさせる
+  ラジオボタンのfont-family:'Lucida Grande';
+  ヘルプ充実(拡張機能を一通り作成)
+  booleanなプロパティはtrue以外はfalseとして扱われるようにした
+  showNameがリアルタイムに変更されるように
+  styleに規定外の文字列を設定すると動作不良になっていたのを修正
+  iconに名前付けたら消える・・・のを修正
+  set icon to iconリソース名 に対応
+  「インデントを合わせる」メニュー
+  Java:15510行 JavaScript:18384行 JSP:3690行
+2012/7/17
+  Linuxでのリソース名の文字化けを修正(Macではnew StringでSJISになっているがLinuxではSJISを強制してやる)
+  adminページにメモリ消費量を追加
+  パスワード辞書攻撃対策にIPアドレスブラックリスト
+  Java:15557行 JavaScript:18381行 JSP:3695行
+2012/7/18
+  jquery mobile 1.1.1にする
+  コピー元の履歴を残す
+  MD5するときにHCjsを頭に付けて固定ソルト。
+  adminページにuseragentとIPアドレス追加
+  finderやstacksでASCII順ソートする
+  ヘルプをexcite翻訳で英語化
+  Java:15572行 JavaScript:18381行 JSP:3911行
+2012/7/19
+  スタック読み込み中はスピン表示、エラー時はダイアログ
+  四角形と楕円ツール時はパレットで塗りつぶし無しを選択可能に
+  ブラシの太さと図形の線の太さを分けて、図形の線の太さはデフォルトで1pxにする
+  browserCheck XFCNを追加
+2012/7/20
+  四角形のペイントでfillが半透明にできなかったりしたのを修正
+  塗りパターンが反転していたのを修正
+  保護時はスタック名変更できない
+  ボタン移動したらアンカー出さない
+  HyperCard標準アイコンに対応
+  Java:15572行 JavaScript:18438行 JSP:3913行
+2012/7/21
+  finder.jspにファイル削除ボタン
+  タッチ時のペイント移動は近隣5ピクセルまで考慮
+  iOSでキーボードが閉じてくれないのはなぜ？→メッセージボックスを一瞬表示させてfocusあわせて逃げる
+  iPadでの文字ツール対応
+  日本語スタック名でペイント保存されないのを修正
+  doMenuでエラー起こってたのを修正
+  openfield/closefield対応
+  家計簿スタック作成
+  じゃんけんスタック作成
+  スポイトカーソルをwindowsで作成
+  getfileのlast-modifiedが12時間制になっていたのを修正
+  ラジオボタン、チェックボックスの背景を半透明にする
+  domenu "new button"とdelete buttonコマンド対応
+  アイコンアニメーションスタック作成
+  リソースのファイル名がかぶってしまう問題を修正
+  Java:15648行 JavaScript:18633行 JSP:3916行
+2012/7/22
+  フィールドのフォントダイアログに行の高さを追加
+  textStyleが設定できなかったのを修正
+  フォントダイアログを日本語化
+  ペイントのfloatingをzoom時でも適切な位置に表示
+  bitmapLocalとfileLocalの動作を変更して、削除したら元のが表示されるようにする
+  iPadでフィールドの自動選択に対応
+  Java:15654行 JavaScript:18732行 JSP:3918行
+2012/7/24
+  スクリプトエディタにパネルを用意
+  Java:15654行 JavaScript:18753行 JSP:3922行
+2012/7/27
+  Mountain Lionにアップグレード失敗したのでバックアップから復旧
+  Iconの拡大をしている場合にハイライトすると等倍になる問題を修正
+  fileLocalでリソース画像の大きさ変更できない問題を修正
+  logo, favicon新調
+  externalではEditメニューをdisable
+  Java:15654行 JavaScript:18757行 JSP:3924行
+2012/7/28
+  スクリプトエディタのパネルを作成中
+  スクリプトエディタ開いたときにソフトキーボードの高さを取得し、メニューとパネルの位置を合わせる
+  userLevel5でないとスクリプト編集できないようにする(edit scriptコマンドはOK)
+  userLevelに応じてツールメニューをdisabledにする
+  自作ハンドラで複数の引数に対応できていなかったのを修正
+  PICTボタンの処理修正
+  debug sound on/off
+  repeat でmouse is down使うとdownがキーワードとして認識される問題を修正
+  アイコンハイライトでキャッシュを利用する
+  set loc of xx to "0,0" に対応できていなかった
+  add item/word/lineの処理修正
+  ゲームセンターハイパーのエアーホッケーが動くように
+  adminページがちゃんと表示されなかったのを修正
+  Java:15673行 JavaScript:19400行 JSP:3926行
+2012/7/29
+  アカウント作成時に最初の文字を大文字小文字変えて重複確認
+  ログイン時に最初の文字を大文字小文字変えて・・・MacOSXではそもそも無視してるがLinuxだと見てる
+  httpGet/htmlUtil XCMD作成
+  global username初期値入れる
+  shift+ボタン移動で垂直/水平制限
+  Java:15831行 JavaScript:19426行 JSP:3926行
+2012/7/30
+  sharedData XCMD作成
+  xmapがSJISや->FileWriter/Readerを使わないようにする
+  Java:15929行 JavaScript:19464行 JSP:3926行
+2012/7/31
+  locとrectは複数プロパティを同時に変更する
+  sharedData lockfile対応
+  HCjs公開 !!
+  guest14->68
+  Java:15953行 JavaScript:19485行 JSP:3933行
+2012/8/1
+  FBいいねボタンとツイートボタンを設置
+  guest92
+2012/8/2
+  スクリプト実行中のキー入力はkeyboadShortcut評価しない。cmd+.は例外。
+  チュートリアルを消さないようにする
+  カードにmouseup/mousedownが送られるようにする(drawGoCardでリスナー消してた)
+  最初からHCスタック読み込みできるようにした
+  character→charの関数を呼ぶ
+  guest107
+  Java:15953行 JavaScript:19501行 JSP:4008行
+2012/8/3
+  ffmpegでaiff変換する。
+  AIFF出力がバグっていたのを修正。(MJDASHがだめで秘密結社がOKになっていた)
+  Tweetボタンといいねボタンはprivateでは出さない
+  スタック変換時のxmapでstatusをprivateに
+  functionで値が返らないバグ修正中
+  Java:15969行 JavaScript:19515行 JSP:4013行
+2012/8/7
+  answerダイアログ表示時は_setLoc()呼ばない
+  chrome対応のため、changeObjをJSON使うようにしてみたが
+  propChange カード移動するならキュークリア
+  Java:15980行 JavaScript:19523行 JSP:4013行
+2012/8/8
+  is within (rect of ~)に対応
+  (loc of x) is not within (rect of ~)に対応
+  if (false) and (true or true) thenに対応
+2012/8/11
+  put ((YOKO+11)-(32*((YOKO+16+11) div 32)))/XKANSEI into XMERIに対応
+  
+  repeat with N=1 to MIN(TOUROKU , trunc(cd fld "HIGHSCORE合計"/1000) +3)
+  
+  delete last character of word 2 of xxx
+  
+  touch位置にあるelement取得はdocument.elementFromPoint(x,y)でできる?
+
+  ☆ask file/answer file
+
+askPassword("開発者モ−ドのパスワード：");
+if((it+"").toLowerCase()==("3851424170"+"").toLowerCase()){//magic
+
+findStringIn(( & ,,cdFld((btnname+"Ex")).text);
+
+put line i of cd btn 1 of first card into TheMovieName
+
+put OCD into CD
+put item 1 of line LN of CDATA into last word of line 1 of CD
+
+GLOBAl CDID
+PUT THE SHORT NAME OF THIS CARD INTO CDID
+
+delete last char of item i of HndPL
+
+set the textStyle of char 4 to 5 in line i in fld id 3 to bold
+
+if item 16 in ili=1 then put "26 21 0," after a
+
+webの情報取れるようにする
+
+cat /Users/segoutakayoshi/Documents/workspace/HC.js/WebContent/*.jsp | wc -l
+cat /Users/segoutakayoshi/Documents/workspace/HC.js/WebContent/js/*.js | wc -l
+cat /Users/segoutakayoshi/Documents/workspace/HC.js/src/nyoicard/*.java | wc -l
+
+------------------------------
+TODO
+
+フィールドの行表示でクリックスルー設定がされない場合がある
+
+touchendでpreventDefaultしてやれば300ミリ秒後のmouseupを防げる
+
+・ChromeではSQL Database読む(か消す)ときにときどき止まる
+・FirefoxではIndexedDatabaseのsync API使う(まだ実装されていない)
+
+・カード内の任意の場所でのcontextmenu
+
+・ポップアップって色付けられるのか
+
+写真の位置情報と地図と
+
+○開発の順番
+＜絶対必要な機能をちゃんと作る＞
+・パレット型スクリプトエディタ（セキュリティのためにも、ここで定義したものしか使えないようにする）
+・SVG
+
+○オーサリング部分
+(・オーサリングはオンライン専用)
+・HyperZebraな中身からHTMLに変換して出力するので、プレイヤーはオフライン可能
+　→そうしないとバージョン上がるとスタックを全作り直しということになる
+・オンライン用とオフライン用の2種類で出力できるとどうにでもなる
+　住所録スタックをセキュリティを考えてオフラインで使いたいだろうし（なんならダウンロードして）
+　iPadと同期したいならクラウドっぽくオンラインで使いたいだろうし。
+・オフラインで動くのを基本として、データベースの内容を同期できるにするという設計も考えられる
+・ボタンのコピペ：そのうちclipboardアクセス仕様ができるらしい。とりあえずはoption+ドラッグでオブジェクトコピー。
+
+○ボタン(HTML,JS)
+・SVGによる図形
+
+○複数スタック連携
+・複数のスタックは開けない
+・ライブラリとして利用することができる
+　データもライブラリとして使える
+
+○拡張API
+・Geo Location APIと地図が欲しい
+・Twitter APIが欲しい
+
+○国際化対応
+・UIだけじゃなく、スタックを国際化できるようになんか考える
+
+----------------------------
+名前案
+
+NyoiCard
+DashCard
+PaperWhite
+Stack Author
+StackLion
+waffcard
+HyperWebCard
+
+Hyper Wonder Thunder Live White
+Lion Card Stack Author Cat .js
+
+----------------------------
+○要テスト
+・認証が必要なところに認証なしで入れないか
+・すべてのリンクが200OKを返すか
+・フォームに > や 日本語 を入れて問題が起こらないか
+　・GETメソッドを使う場合はURLに直接入れて確かめる
+・JavaScriptで不正なことができないか
+・finder.jspで_から始まるファイルを変更できないようにする
+・ボタンやフィールドのテキストや名前をHTMLエスケープ漏れしてないか
+・バックグラウンドでボタンやフィールドが作られるか
+・btn xはcdbtnでfld xはbgfld。たぶん。
+

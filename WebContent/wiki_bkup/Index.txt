@@ -1,0 +1,15 @@
+== このWikiは何？ ==
+
+pgoが今作っているWeb版HyperCardクローンについて書くためのWikiです。誰でも編集できたりはしません。
+
+== Web版HyperCardクローン ==
+
+JavaScriptを使って、ブラウザ上でHyperCardのようなソフトを作成しています。
+* 動作環境：MacOSX Safari, iPhone Safari, iPad Safari
+* HyperCardとの互換性：スタック読み込み可能、HyperTalkもある程度動作
+* 機能：ブラウジング、ペインティング、オーサリング、スクリプティング
+
+== 記事一覧 ==
+* [[開発日誌]]
+* [[HyperCardについて]]
+* [[HCjsの裏側]]

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>オブジェクト</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>オブジェクト</h3>
+				<p>HCjsのボタン、フィールド、カード、バックグラウンド、スタックがオブジェクトです。HCjsのスクリプトでそれらを扱うことができます。スタックはstack、バックグラウンドはbackground/bkgnd/bg、カードはcard/cd、ボタンはbutton/btn、フィールドはfield/fldです。
+				</p>
+				<h3>オブジェクトのプロパティ</h3>
+				<p>オブジェクトにはプロパティがあり、変更して動作や見た目を変更できます。プロパティは情報ダイアログから変更することも、スクリプトから変更することもできます。スクリプトではicon of cd btn 1のようにofを使ってプロパティを参照します。
+				</p>
+				<h3>オブジェクトの参照</h3>
+				<p>スタックはカードとバックグラウンドを持ち、カードとバックグラウンドはピクチャとボタンとフィールドを持つことができます。スクリプトから card button 1 を参照すると現在表示されているカードの1番目のボタンのことです。card button 1 of card "ABC" のようにして他のカードのボタンを参照することができます。
+				</p>
+				<h3>ID,番号,名前</h3>
+				<p>オブジェクトの参照にはID,番号,名前の3種類の方法があります。名前ではcard "ABC"、IDではcard id 2、番号ではcard 3のように参照します。
+				</p>
+				<h3>IDの範囲</h3>
+				<p>パーツ(ボタンとフィールド)のIDはそのカード内のパーツで重複しない、1から始まる最小のIDが付きます。マスター編集モードでない場合には50000から始まるIDが付きます。
+				</p>
+				<p>カードとバックグラウンドのIDはそのスタック内で重複しない、乱数で決められたIDが付きます。マスター編集モードでない場合にはマイナスのIDが付きます。
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

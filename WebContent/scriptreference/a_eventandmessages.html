@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>イベントとメッセージ</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>イベントとメッセージ</h3>
+				<p>マウスボタンを押し下げるとmouseDownのイベントが発生し、mouseDownのメッセージが該当するオブジェクトに送られます。このようにイベント発生によってメッセージが送られスクリプトの動作が始まります。
+				</p>
+				<h3>イベントの種類1 (マウス関連)</h3>
+				<ul>
+					<li>mouseDown: マウスボタンを押し下げたとき、タッチを始めたとき</li>
+					<li>mouseUp: マウスボタンを離したとき、タッチの指を離したとき</li>
+					<li>mouseStillDown: マウスボタンを押し下げ続け/タッチを続けていると発生し続ける</li>
+					<li>mouseEnter: マウスボタンがボタン/フィールドの範囲内に入ったとき</li>
+					<li>mouseLeave: マウスボタンがボタン/フィールドの範囲内から出たとき</li>
+					<li>mouseWithin: マウスボタンがボタン/フィールドの範囲内に入っていると発生し続ける</li>
+				</ul>
+				<h3>イベントの種類2 (カード移動関連)</h3>
+				<ul>
+					<li>openCard: カードに移動したとき</li>
+					<li>closeCard: カードから移動するとき</li>
+					<li>openStack: スタックを開いたとき</li>
+					<li>他にも増える予定</li>
+				</ul>
+				<h3>イベントの種類3 (フィールド関連)</h3>
+				<ul>
+					<li>openField: フィールドを編集開始したとき</li>
+					<li>closeField: フィールドの編集を終了したとき</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

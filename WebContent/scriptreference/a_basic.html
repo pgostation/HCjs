@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>基本</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>英語に近い言語</h3>
+				<p>普通のプログラム言語ですと、変数への代入は「a = 1」のように書きますが、HCjsのスクリプトでは「put 1 into a」と書きます。
+				</p>
+				<h3>大文字と小文字を区別しない</h3>
+				<p>「if "abc" is "ABC" then」は等しいと解釈されます。また「PUT 123 INTO ABC」のようにスクリプトそのものも大文字と小文字を区別しません。
+				</p>
+				<h3>変数に入った値の型は気にしない</h3>
+				<p>足し算をすると数値として扱おうとし、文字連結をすると文字列として扱おうとします。
+				</p>
+				<h3>--でコメント</h3>
+				<p>--の後ろに書いた文字列はコメントとなり、実行されません。
+				</p>
+				<h3>JavaScriptに変換して動作</h3>
+				<p>スクリプト保存時にサーバ側でJavaScriptに変換されます。HCjsではJavaScriptを直接書くことはできません。
+				</p>
+				<h3>オブジェクトに紐づく</h3>
+				<p>スクリプトはオブジェクトのどれかに設定されます。
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

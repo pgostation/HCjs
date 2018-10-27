@@ -1,0 +1,32 @@
+WebブラウザがHTML5対応やCSS3対応などで競争して数多くの機能が追加されたので、HyperCardクローン作るのに大変重宝しています。
+
+== HTML5,CSS3で実現した機能 ==
+* CSS3 Animationでの視覚効果
+* CSS3の角丸やグラデーションや影でのボタンの見た目
+* CSS-transformでの拡大
+* canvas, SVGによるペイント機能
+* Web Workersによるスレッド対応、worker内からのWeb SQL Databaseの使用
+* Text Selection APIによるテキスト選択
+* audioサポートによるサウンド対応、Web Audio APIによる音程変更
+* HTML5 Forms
+* Drag and Drop APIとAJAXでのファイルアップロードによる画像ファイル読み込み対応
+* ContentEditableでフィールドやスクリプトエディタ作成
+* Web Storage (スタックデータの保存)
+あとjQuery UIやjQuery MobileなどのJavaScriptフレームワークも大変活用させてもらっています。
+
+== 使っていないHTML5の機能 ==
+* GeoLocation API
+* Web Messaging API
+* WebSocket API, Server-Sent Event (複数の人で同時に編集したりとかできそう)
+* IndexedDB (Syncに対応したら使う)
+* Offline Web Application API (使えるようにしたい)
+* MicroData
+* WebGL
+* Device API, HTML Media Capture (使いたいけどSafariの対応が……)
+* File API (使いたいけどSafariの対応が……)
+* Undo Manager
+* videoサポート
+* Clipboard API (まだ仕様が作られているところ?)
+* MathML
+* Navigation Timingとか
+まだ他にもたくさんあります……。

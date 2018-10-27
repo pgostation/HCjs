@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>条件分岐と繰り返し</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+				<h3>制御構造</h3>
+				<p>スクリプトは基本的に上から下へ順番に処理されますが、その流れを変えるのが制御構造です。
+				</p>
+				<h3>if文</h3>
+				<p>「if 式 then コマンド」で式が成立する場合にコマンドが実行されます
+				</p>
+				<p>「if 式 then コマンド1 else コマンド2」で式が成立する場合にコマンド1が実行され、成立しない場合にコマンド2が実行されます
+				</p>
+				<h3>repeat文</h3>
+				<p>繰り返し処理をします。
+				</p>
+				<ul>
+					<li>repeat: exit repeatなどで抜けるまで処理を繰り返します</li>
+					<li>repeat forever: 上と同じ</li>
+					<li>repeat 10: 処理を10回繰り返します</li>
+					<li>repeat with x=1 to 10: xを1から始めて10になるまで1ずつ増やしながら10回繰り返します</li>
+					<li>repeat with x=10 down to 1: xを10から始めて1になるまで1ずつ減らしながら10回繰り返します</li>
+					<li>repeat while the mouse is down: マウスボタンが押されている間繰り返します</li>
+					<li>repeat until the mouseClick: マウスがクリックされるまで繰り返します</li>
+				</ul>
+				<h3>exit repeat文</h3>
+				<p>repeatの繰り返し処理を抜けます。
+				</p>
+				<h3>next repeat文</h3>
+				<p>repeatの繰り返し処理の最初の行に戻ります。
+				</p>
+				<h3>return文</h3>
+				<p>そのハンドラを抜けます。
+				</p>
+				<h3>exit to hypercard文</h3>
+				<p>そのハンドラを実行している根本のハンドラを抜けます。
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

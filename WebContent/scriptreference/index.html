@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true" data-dom-cache="true">
+		<div data-role="header" data-position="fixed">
+			<h1>HCjs Script Reference</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main1">
+				<h3>HCjsのスクリプト</h3>
+				<ul data-role="listview" data-inset="true">
+					<li><a href="a_basic.html">基本</a></li>
+					<li><a href="a_editandrun.html">スクリプトの編集と実行</a></li>
+					<li><a href="a_objects.html">オブジェクト</a></li>
+					<li><a href="a_eventandmessages.html">イベントとメッセージ</a></li>
+					<li><a href="a_variable.html">変数とコンテナ</a></li>
+					<li><a href="a_constant.html">定数</a></li>
+					<li><a href="a_commandandfunc.html">コマンド定義と関数定義</a></li>
+					<li><a href="a_controlstatement.html">条件分岐と繰り返し</a></li>
+					<li><a href="a_operator.html">演算子</a></li>
+					<li><a href="a_external.html">拡張機能(external)</a></li>
+				</ul>
+			</div>
+			<div id="main2">
+				<h3>スクリプトリファレンス</h3>
+				<ul data-role="listview" data-inset="true" data-filter="true" data-filter-placeholder="絞り込み検索">
+					<li data-role="list-divider">コマンド</li>
+					<li><a href="c_add.html">add</a></li>
+					<li><a href="c_answer.html">answer</a></li>
+					<li><a href="c_arrowkey.html">arrowKey</a></li>
+					<li><a href="c_ask.html">ask</a></li>
+					<li><a href="c_beep.html">beep</a></li>
+					<li><a href="c_choose.html">choose</a></li>
+					<li><a href="c_click.html">click at</a></li>
+					<li><a href="c_close.html">close file</a></li>
+					<li><a style="color:gray;" xhref="c_commandkeydown.html">commandKeyDown</a></li>
+					<li><a style="color:gray;" xhref="c_controlkey.html">controlKey</a></li>
+					<li><a href="c_convert.html">convert</a></li>
+					<li><a style="color:gray;" xhref="c_copy.html">copy</a></li>
+					<li><a href="c_create.html">create</a></li>
+					<li><a href="c_debug.html">debug</a></li>
+					<li><a href="c_delete.html">delete</a></li>
+					<li><a style="color:gray;" xhref="c_dial.html">dial</a></li>
+					<li><a href="c_disable.html">disable</a></li>
+					<li><a href="c_divide.html">divide</a></li>
+					<li><a href="c_do.html">do</a></li>
+					<li><a href="c_domenu.html">doMenu</a></li>
+					<li><a style="color:gray;" xhref="c_drag.html">drag</a></li>
+					<li><a href="c_edit.html">edit</a></li>
+					<li><a href="c_enable.html">enable</a></li>
+					<li><a style="color:gray;" xhref="c_enterinfield.html">enterInField</a></li>
+					<li><a style="color:gray;" xhref="c_enterkey.html">enterKey</a></li>
+					<li><a href="c_export.html">export</a></li>
+					<li><a href="c_find.html">find</a></li>
+					<li><a href="c_flash.html">flash</a></li>
+					<li><a href="c_get.html">get</a></li>
+					<li><a href="c_go.html">go</a></li>
+					<li><a href="c_help.html">help</a></li>
+					<li><a href="c_hide.html">hide</a></li>
+					<li><a style="color:gray;" xhref="c_import.html">import</a></li>
+					<li><a style="color:gray;" xhref="c_keydown.html">keyDown</a></li>
+					<li><a href="c_lock.html">lock</a></li>
+					<li><a href="c_mark.html">mark</a></li>
+					<li><a href="c_multiply.html">multiply</a></li>
+					<li><a href="c_open.html">open</a></li>
+					<li><a href="c_palette.html">palette</a></li>
+					<li><a href="c_picture.html">picture</a></li>
+					<li><a href="c_play.html">play</a></li>
+					<li><a href="c_pop.html">pop</a></li>
+					<li><a style="color:gray;" xhref="c_print.html">print</a></li>
+					<li><a href="c_push.html">push</a></li>
+					<li><a href="c_put.html">put</a></li>
+					<li><a href="c_read.html">read</a></li>
+					<li><a style="color:gray;" xhref="c_reply.html">reply</a></li>
+					<li><a style="color:gray;" xhref="c_request.html">request</a></li>
+					<li><a href="c_reset.html">reset</a></li>
+					<li><a style="color:gray;" xhref="c_returninfield.html">returnInField</a></li>
+					<li><a style="color:gray;" xhref="c_returnkey.html">returnKey</a></li>
+					<li><a href="c_save.html">save</a></li>
+					<li><a href="c_select.html">select</a></li>
+					<li><a href="c_send.html">send</a></li>
+					<li><a href="c_set.html">set</a></li>
+					<li><a href="c_show.html">show</a></li>
+					<li><a href="c_sort.html">sort</a></li>
+					<li><a style="color:gray;" xhref="c_start.html">start</a></li>
+					<li><a style="color:gray;" xhref="c_stop.html">stop</a></li>
+					<li><a href="c_subtract.html">subtract</a></li>
+					<li><a style="color:gray;" xhref="c_tabkey.html">tabKey</a></li>
+					<li><a href="c_type.html">type</a></li>
+					<li><a href="c_unlock.html">unlock</a></li>
+					<li><a href="c_unmark.html">unmark</a></li>
+					<li><a href="c_visual.html">visual</a></li>
+					<li><a href="c_wait.html">wait</a></li>
+					<li><a href="c_write.html">write</a></li>
+					
+					<li data-role="list-divider">ファンクション</li>
+					<li><a href="f_abs.html">abs</a></li>
+					<li><a href="f_annuity.html">annuity</a></li>
+					<li><a href="f_atan.html">atan</a></li>
+					<li><a href="f_average.html">average</a></li>
+					<li><a href="f_chartonum.html">charToNum</a></li>
+					<li><a href="f_clickchunk.html">clickChunk</a></li>
+					<li><a href="f_clickh.html">clickH</a></li>
+					<li><a href="f_clickline.html">clickLine</a></li>
+					<li><a href="f_clickloc.html">clickLoc</a></li>
+					<li><a href="f_clicktext.html">clickText</a></li>
+					<li><a href="f_clickv.html">clickv</a></li>
+					<li><a href="f_commandkey.html">commandKey/cmdKey</a></li>
+					<li><a href="f_compound.html">compound</a></li>
+					<li><a href="f_controlkey.html">controlKey</a></li>
+					<li><a href="f_cos.html">cos</a></li>
+					<li><a href="f_date.html">date</a></li>
+					<li><a style="color:gray;" xhref="f_diskspace.html">diskSpace</a></li>
+					<li><a href="f_exp.html">exp</a></li>
+					<li><a href="f_exp1.html">exp1</a></li>
+					<li><a href="f_exp2.html">exp2</a></li>
+					<li><a href="f_foundchunk.html">foundChunk</a></li>
+					<li><a href="f_foundfield.html">foundField</a></li>
+					<li><a href="f_foundline.html">foundLine</a></li>
+					<li><a href="f_foundtext.html">foundText</a></li>
+					<li><a style="color:gray;" xhref="f_heapspace.html">heapSpace</a></li>
+					<li><a href="f_length.html">length</a></li>
+					<li><a href="f_ln.html">ln</a></li>
+					<li><a href="f_ln1.html">ln1</a></li>
+					<li><a href="f_log2.html">log2</a></li>
+					<li><a href="f_max.html">max</a></li>
+					<li><a href="f_menus.html">menus</a></li>
+					<li><a href="f_min.html">min</a></li>
+					<li><a href="f_mouse.html">mouse</a></li>
+					<li><a href="f_mouseclick.html">mouseClick</a></li>
+					<li><a href="f_mouseh.html">mouseH</a></li>
+					<li><a href="f_mouseloc.html">mouseLoc</a></li>
+					<li><a href="f_mousev.html">mouseV</a></li>
+					<li><a href="f_number.html">number</a></li>
+					<li><a href="f_numtochar.html">numToChar</a></li>
+					<li><a href="f_offset.html">offset</a></li>
+					<li><a href="f_optionkey.html">optionKey</a></li>
+					<li><a href="f_param.html">param</a></li>
+					<li><a href="f_paramcount.html">paramCount</a></li>
+					<li><a href="f_params.html">params</a></li>
+					<li><a style="color:gray;" xhref="f_programs.html">programs</a></li>
+					<li><a href="f_random.html">random</a></li>
+					<li><a href="f_result.html">result</a></li>
+					<li><a href="f_round.html">round</a></li>
+					<li><a style="color:gray;" xhref="f_screenrect.html">screenRect</a></li>
+					<li><a href="f_seconds.html">seconds/secs</a></li>
+					<li><a href="f_selectedbutton.html">selectedButton</a></li>
+					<li><a style="color:gray;" xhref="f_selectedchunk.html">selectedChunk</a></li>
+					<li><a style="color:gray;" xhref="f_selectedfield.html">selectedField</a></li>
+					<li><a style="color:gray;" xhref="f_selectedline.html">selectedLine</a></li>
+					<li><a style="color:gray;" xhref="f_selectedloc.html">selectedLoc</a></li>
+					<li><a style="color:gray;" xhref="f_selectedtext.html">selectedText</a></li>
+					<li><a style="color:gray;" xhref="f_selection.html">selection</a></li>
+					<li><a href="f_shiftkey.html">shiftKey</a></li>
+					<li><a href="f_sin.html">sin</a></li>
+					<li><a href="f_sound.html">sound</a></li>
+					<li><a href="f_sqrt.html">sqrt</a></li>
+					<li><a href="f_stacks.html">stacks</a></li>
+					<li><a style="color:gray;" xhref="f_stackspace.html">stackSpace</a></li>
+					<li><a href="f_sum.html">sum</a></li>
+					<li><a href="f_systemversion.html">systemVersion</a></li>
+					<li><a href="f_tan.html">tan</a></li>
+					<li><a href="f_target.html">target</a></li>
+					<li><a href="f_ticks.html">ticks</a></li>
+					<li><a href="f_time.html">time</a></li>
+					<li><a href="f_tool.html">tool</a></li>
+					<li><a href="f_trunc.html">trunc</a></li>
+					<li><a style="color:gray;" xhref="f_value.html">value</a></li>
+					<li><a href="f_version.html">version</a></li>
+					<li><a href="f_windows.html">windows</a></li>
+
+					<li data-role="list-divider">プロパティ</li>
+					<li><a style="color:gray;" xhref="p_address.html">address</a></li>
+					<li><a href="p_autohilite.html">autoHilite</a></li>
+					<li><a href="p_autoselect.html">autoSelect</a></li>
+					<li><a style="color:gray;" xhref="p_autotab.html">autoTab</a></li>
+					<li><a style="color:gray;" xhref="p_blindtyping.html">blindTyping</a></li>
+					<li><a href="p_bottom.html">bottom</a></li>
+					<li><a href="p_bottomright.html">bottomRight/botRight</a></li>
+					<li><a style="color:gray;" xhref="p_brush.html">brush</a></li>
+					<li><a href="p_cantabort.html">cantAbort</a></li>
+					<li><a href="p_cantdelete.html">cantDelete</a></li>
+					<li><a href="p_cantmodify.html">cantModify</a></li>
+					<li><a href="p_cantpeek.html">cantPeek</a></li>
+					<li><a style="color:gray;" xhref="p_centered.html">centered</a></li>
+					<li><a style="color:gray;" xhref="p_checkmark.html">checkMark</a></li>
+					<li><a style="color:gray;" xhref="p_commandchar.html">commandChar/cmdChar</a></li>
+					<li><a style="color:gray;" xhref="p_cursor.html">cursor</a></li>
+					<li><a style="color:gray;" xhref="p_debugger.html">debugger</a></li>
+					<li><a style="color:gray;" xhref="p_dialingtime.html">dialingTime</a></li>
+					<li><a style="color:gray;" xhref="p_dialingvolume.html">dialingVolume</a></li>
+					<li><a href="p_dontsearch.html">dontSearch</a></li>
+					<li><a href="p_dontwrap.html">dontWrap</a></li>
+					<li><a style="color:gray;" xhref="p_dragspeed.html">dragDpeed</a></li>
+					<li><a href="p_editbkgnd.html">editBkgnd</a></li>
+					<li><a href="p_enabled.html">enabled</a></li>
+					<li><a href="p_environment.html">environment</a></li>
+					<li><a href="p_family.html">family</a></li>
+					<li><a style="color:gray;" xhref="p_filled.html">filled</a></li>
+					<li><a href="p_fixedlineheight.html">fixedLineHeight</a></li>
+					<li><a style="color:gray;" xhref="p_freesize.html">freeSize</a></li>
+					<li><a style="color:gray;" xhref="p_grid.html">grid</a></li>
+					<li><a href="p_height.html">height</a></li>
+					<li><a href="p_hilite.html">hilite/highlight</a></li>
+					<li><a href="p_icon.html">icon</a></li>
+					<li><a href="p_iconscaling.html">iconScaling</a></li>
+					<li><a href="p_id.html">id</a></li>
+					<li><a href="p_itemdelimiter.html">itemDelimiter</a></li>
+					<li><a style="color:gray;" xhref="p_language.html">language</a></li>
+					<li><a href="p_left.html">left</a></li>
+					<li><a style="color:gray;" xhref="p_linesize.html">lineSize</a></li>
+					<li><a href="p_location.html">location/loc</a></li>
+					<li><a style="color:gray;" xhref="p_lockerrordialogs.html">lockErrorDialogs</a></li>
+					<li><a href="p_lockmessages.html">lockMessages</a></li>
+					<li><a href="p_lockrecent.html">lockRecent</a></li>
+					<li><a href="p_lockscreen.html">lockScreen</a></li>
+					<li><a href="p_locktext.html">lockText</a></li>
+					<li><a style="color:gray;" xhref="p_longwindowtitles.html">longWindowTitles</a></li>
+					<li><a style="color:gray;" xhref="p_markchar.html">markChar</a></li>
+					<li><a href="p_marked.html">marked</a></li>
+					<li><a style="color:gray;" xhref="p_menumessage.html">menuMessage/menuMsg</a></li>
+					<li><a style="color:gray;" xhref="p_messagewatcher.html">messageWatcher</a></li>
+					<li><a style="color:gray;" xhref="p_multiple.html">multiple</a></li>
+					<li><a style="color:gray;" xhref="p_multiplelines.html">multipleLines</a></li>
+					<li><a href="p_multispace.html">multiSpace</a></li>
+					<li><a href="p_name.html">name</a></li>
+					<li><a style="color:gray;" xhref="p_numberformat.html">numberFormat</a></li>
+					<li><a href="p_opacity.html">opacity</a></li>
+					<li><a style="color:gray;" xhref="p_owner.html">owner</a></li>
+					<li><a style="color:gray;" xhref="p_partnumber.html">partNumber</a></li>
+					<li><a style="color:gray;" xhref="p_pattern.html">pattern</a></li>
+					<li><a style="color:gray;" xhref="p_polysides.html">polySides</a></li>
+					<li><a style="color:gray;" xhref="p_powerkeys.html">powerKeys</a></li>
+					<li><a style="color:gray;" xhref="p_printmargins.html">printMargins</a></li>
+					<li><a style="color:gray;" xhref="p_printtextalign.html">printTextSlign</a></li>
+					<li><a style="color:gray;" xhref="p_printtextfont.html">printTextFont</a></li>
+					<li><a style="color:gray;" xhref="p_printtextheight.html">printTextHeight</a></li>
+					<li><a style="color:gray;" xhref="p_printtextsize.html">printTextSize</a></li>
+					<li><a style="color:gray;" xhref="p_printtextstyle.html">printTextStyle</a></li>
+					<li><a href="p_rectangle.html">rectangle/rect</a></li>
+					<li><a style="color:gray;" xhref="p_reporttemplates.html">reportTemplates</a></li>
+					<li><a href="p_right.html">right</a></li>
+					<li><a href="p_script.html">script</a></li>
+					<li><a style="color:gray;" xhref="p_scripteditor.html">scriptEditor</a></li>
+					<li><a style="color:gray;" xhref="p_scriptinglanguage.html">scriptingLanguage</a></li>
+					<li><a style="color:gray;" xhref="p_scripttextfont.html">scriptTextFont</a></li>
+					<li><a style="color:gray;" xhref="p_scripttextsize.html">scriptTextSize</a></li>
+					<li><a href="p_scroll.html">scroll</a></li>
+					<li><a href="p_selectedline.html">selectedLine</a></li>
+					<li><a href="p_selectedtext.html">selectedText</a></li>
+					<li><a href="p_sharedhilite.html">sharedHilite</a></li>
+					<li><a href="p_sharedtext.html">sharedText</a></li>
+					<li><a href="p_showlines.html">showLines</a></li>
+					<li><a href="p_showname.html">showName</a></li>
+					<li><a href="p_shownavigator.html">showNavigator</a></li>
+					<li><a href="p_showpict.html">showPict</a></li>
+					<li><a style="color:gray;" xhref="p_size.html">size</a></li>
+					<li><a style="color:gray;" xhref="p_soundchannel.html">soundChannel</a></li>
+					<li><a style="color:gray;" xhref="p_stacksinuse.html">stacksInUse</a></li>
+					<li><a href="p_style.html">style</a></li>
+					<li><a style="color:gray;" xhref="p_suspended.html">suspended</a></li>
+					<li><a href="p_textalign.html">textAlign</a></li>
+					<li><a style="color:gray;" xhref="p_textarrows.html">textArrows</a></li>
+					<li><a href="p_textfont.html">textFont</a></li>
+					<li><a href="p_textheight.html">textHeight</a></li>
+					<li><a href="p_textsize.html">textSize</a></li>
+					<li><a href="p_textstyle.html">textStyle</a></li>
+					<li><a href="p_titlewidth.html">titleWidth</a></li>
+					<li><a href="p_top.html">top</a></li>
+					<li><a href="p_topleft.html">topLeft</a></li>
+					<li><a style="color:gray;" xhref="p_tracedelay.html">traceDelay</a></li>
+					<li><a href="p_userlevel.html">userLevel</a></li>
+					<li><a style="color:gray;" xhref="p_usermodify.html">userModify</a></li>
+					<li><a style="color:gray;" xhref="p_variablewatcher.html">variableWatcher</a></li>
+					<li><a href="p_vertically.html">vertically</a></li>
+					<li><a href="p_version.html">version</a></li>
+					<li><a href="p_visible.html">visible</a></li>
+					<li><a style="color:gray;" xhref="p_widemargins.html">wideMargins</a></li>
+					<li><a href="p_width.html">width</a></li>
+					<li><a style="color:gray;" xhref="p_zoomed.html">zoomed</a></li>
+					
+					<li data-role="list-divider">拡張機能</li>
+					<li><a href="x_addcolor.html">AddColor</a></li>
+					<li><a href="x_browsercheck.html">BrowserCheck</a></li>
+					<li><a href="x_colorizehc.html">ColorizeHC</a></li>
+					<li><a href="x_kstealkeyx2.html">KstealKeyX2</a></li>
+					<li><a style="color:gray;" xhref="x_getmem.html">GetMem</a></li>
+					<li><a style="color:gray;" xhref="x_getmonitor.html">GetMonitor</a></li>
+					<li><a href="x_htmlutil.html">HtmlUtil</a></li>
+					<li><a href="x_httpget.html">HttpGet</a></li>
+					<li><a href="x_pgcolorx.html">PgColorX</a></li>
+					<li><a style="color:gray;" xhref="x_setmonitor.html">SetMonitor</a></li>
+					<li><a href="x_shareddata.html">SharedData</a></li>
+					<li><a href="x_terazza2.html">Terazza2</a></li>
+					<li><a href="x_uxanswer.html">UxAnswer</a></li>
+					<li><a href="x_uxback.html">UxBack</a></li>
+					<li><a href="x_uxgetinkey.html">UxGetInKey</a></li>
+					<li><a style="color:gray;" href="x_qtmovie.html">QtMovie</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

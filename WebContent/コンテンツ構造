@@ -1,0 +1,62 @@
+--
+■■■動かし方■■■
+
+(1)glassfishサーバを用意する
+・Tomcatでは動かなかったが、やり方次第で動くかもしれない
+(2)通常のデプロイ処理を行う
+・Eclipseなどでプロジェクトを読み込む
+・WARファイルにExportする
+・WARファイルをglassfishサーバにデプロイする
+(3)glassfishの該当ドメインのapplicationsディレクトリに"user"ディレクトリをコピーする
+・userディレクトリにお知らせ部分を表示するためのテキストファイルと、新規スタックのためのひな形があります。
+(4)adminアカウントを使用したい場合は適当なアカウントを作って、ディレクトリをadminにリネームする
+・adminアカウントでは管理ページ(admin.jsp)にアクセスできます。
+(5)セッションタイムアウトが短いので長くする
+(6)ffmpegをインストールする
+
+--
+
+ ■ディレクトリ
+ css/
+   default/
+ error/
+ img/
+ js/
+ scriptreference/
+ snd/
+ user/
+   __info/
+   _newstack/
+   ~/
+     data/
+     stack/
+       _stackinfo.xmap
+     _sessionId
+     _password.hash
+     _userinfo.xmap(ユーザの設定を入れる)
+ 
+ ■jsp
+ //index.jsp (メニュー、ログイン/ログアウト)
+ error_page.jsp
+ //finder.jsp
+ //help.html
+ //logout.jsp
+ //newaccount.jsp
+ //newstack.jsp
+ //privacy.html
+ //scriptreference/index.html
+ //stackinfo.jsp
+ //stackinfoedit.jsp
+ //special.jsp
+ search.jsp
+ //stackplayer.jsp?author=xx&name=xx
+ //stacks.jsp
+ //terms.html
+ //user.jsp?user=xx
+ //useredit.jsp
+ 
+ ■データベース
+ ファイルシステムを使う(ユーザ情報、スタック情報)
+ ログインのセッションID管理はテキストデータに保存
+ スタック検索はスタック公開時に全ユーザのディレクトリを全探索し、テキストファイルに書いておく。
+ 

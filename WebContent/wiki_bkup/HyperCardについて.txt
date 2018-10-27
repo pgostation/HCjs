@@ -1,0 +1,21 @@
+== HyperCardとは ==
+Apple社のビル・アトキンソン(スクリプト部分はダン・ウィンクラー)が1987年に作った、コンテンツを作成するためのアプリケーション。使いやすく、テキストも画像もサウンドも扱えて、英語のようなスクリプト言語で複雑なこともできる、なんでもできるソフトでした。Webの登場や、標準機能ではカラーを扱えないなど、時代遅れになって姿を消していきました。
+
+[[もっとHyperCardについて]]
+== 今HyperCardを動かすには==
+
+HyperCardはIntel CPU搭載Macになって起動できなくなりました。HyperCardを動かすための手段としては旧型MacのエミュレーターやHyperCardクローンがあります。
+
+=== Macエミュレーター ===
+代表的なものとしてSheepShaverやBasiliskIIなどがあります。動かすまでが大変です。HyperCardクローンよりもずっと正確にHyperCardが動きます。
+
+=== HyperCardクローン===
+有名なものとして[http://www.supercard.us/ SuperCard]と[http://www.runrev.com/ LiveCode(RunRev社)]があり、どちらもIntel Mac(や他のプラットフォーム)で動作します。いい値段します。LiveCodeはHyperCardよりずっと高機能なんですが、日本では盛り上がらなかったですね。
+
+
+フリーの主なHyperCardクローン
+* [http://stacksmith.org/ StackSmith]：オープンソースのHyperCardクローン。現在も開発進行中。
+* [https://github.com/pgostation/HyperZebra HyperZebra]：pgoの作成したJava版HyperCardクローン。
+* [http://hcjs.pgoo.info/ HCjs]：pgoの作成中のWeb版HyperCard。
+* [http://www.tilestack.com/ TileStack]：WebでHyperCardが動くクオリティの高いサイトでしたが閉鎖。
+* [http://www.openxion.org/ OpenXION]：Java版HyperTalkエンジン。誰かGUI作らないのかな。

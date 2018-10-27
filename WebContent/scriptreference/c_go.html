@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>go</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>go prev</h3>
+<p>一つ前のカードに移動します。
+</p>
+<h3>go next</h3>
+<p>次のカードに移動します。
+</p>
+<h3>go カード</h3>
+<p>指定のカードに移動します。
+</p>
+<pre class=source>
+on mouseUp
+  go first cd --最初のカードに移動
+  wait 60
+  go next --次のカードに移動
+  wait 60
+  go cd 3 --3番目のカードに移動
+  wait 60
+  go cd id 123 --id 123のカードに移動
+  wait 60
+  go cd &quot;ABC&quot; --ABCの名前のカードに移動
+end mouseUp
+</pre>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>HCjs script reference</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<link rel="stylesheet" href="../css/dashboard.css" />
+</head>
+<body>
+	<div data-role="page" data-add-back-btn="true">
+		<div data-role="header" data-position="fixed">
+			<h1>ask</h1>
+			<a href="../" data-icon="home" data-iconpos="notext" class="ui-btn-right">ホーム</a>
+		</div>
+		<div data-role="content">
+			<div id="main00">
+<h3>ask 表示文字列</h3>
+<h3>ask 表示文字列 with デフォルト文字列</h3>
+<p>文字入力のためのダイアログを表示します。ユーザが入力した文字列はitに入ります。
+</p>
+<pre class=source>
+on mouseUp
+  ask &quot;名前を入力してください&quot;
+  if it is not empty then
+    put it into cd fld &quot;名前&quot;
+  end if
+end mouseUp
+</pre>
+<h3>(未実装) ask password 文字列</h3>
+<p>パスワード入力のためのダイアログを表示します。ユーザが入力した文字列はハッシュ文字列にされてitに入ります。
+</p>
+<h3>(未実装) ask file 文字列</h3>
+<p>保存するファイル名を入力するためのダイアログを表示します。
+</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
